@@ -6,6 +6,17 @@ on:
     - cron: '25 6 * * 1-5'
   workflow_dispatch:  # Allow manual triggering
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   update-regwatch:
     runs-on: ubuntu-latest
@@ -28,21 +39,25 @@ jobs:
         run: |
           python regwatch.py
       
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: out
-          branch: gh-pages
-          clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
+      - name: Copy output files to root for GitHub Pages
+        run: |
+          cp -r out/* .
       
-      - name: Commit and push if there are changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add out/
-          if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Update RegWatch data [skip ci]"
-            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/mgillr/nextalent-regwatch.git HEAD:master
-          fi
+          git add regwatch.json regwatch-*.json widget.js index.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update RegWatch data [skip ci]" && git push)
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: 'out'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
