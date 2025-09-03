@@ -83,8 +83,18 @@ The system generates a widget (widget.js and index.html) that can be embedded in
 
 4. Run the collector:
    ```
-   python src/main.py
+   python regwatch.py
    ```
+   
+   This will:
+   - Read sources from regwatch.yml
+   - Auto-discover RSS/Atom feeds on landing pages
+   - Parse items, filter by recency, and classify by keywords
+   - Output to the ./out directory:
+     - regwatch.json (Lovable schema)
+     - regwatch-YYYY-MM-DD.json (dated snapshot for fallback)
+     - widget.js (data + renderer; optional embed)
+     - index.html (standalone fallback page)
 
 ## GitHub Actions
 
@@ -97,6 +107,14 @@ You can test a specific RSS feed using the included test script:
 ```
 python test_feed.py https://example.com/feed.xml
 ```
+
+You can also run a quick test of the regwatch.py script with a minimal configuration:
+
+```
+python test_regwatch.py
+```
+
+This will create a test configuration, fetch a few feeds, and output the results to the test_out directory.
 
 ## Customization
 
