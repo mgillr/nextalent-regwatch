@@ -3,28 +3,29 @@
 import logging
 import json
 import os
+import yaml
 
 logger = logging.getLogger(__name__)
 
 class KeywordFilter:
     """Filter for regulatory data based on keywords."""
     
-    def __init__(self, keywords_file=None):
+    def __init__(self, config_file=None):
         """
         Initialize the keyword filter.
         
         Args:
-            keywords_file (str, optional): Path to the keywords JSON file.
+            config_file (str, optional): Path to the configuration YAML file.
                 If not provided, uses the default keywords.
         """
-        self.keywords = self._load_keywords(keywords_file)
+        self.keywords = self._load_keywords(config_file)
     
-    def _load_keywords(self, keywords_file):
+    def _load_keywords(self, config_file):
         """
-        Load keywords from a file or use defaults.
+        Load keywords from a configuration file or use defaults.
         
         Args:
-            keywords_file (str, optional): Path to the keywords JSON file.
+            config_file (str, optional): Path to the configuration YAML file.
             
         Returns:
             dict: Dictionary of keywords by sector.
@@ -52,14 +53,23 @@ class KeywordFilter:
             ]
         }
         
-        if keywords_file and os.path.exists(keywords_file):
+        if config_file and os.path.exists(config_file):
             try:
-                with open(keywords_file, 'r') as f:
-                    custom_keywords = json.load(f)
-                logger.info(f"Loaded custom keywords from {keywords_file}")
+                with open(config_file, 'r') as f:
+                    if config_file.endswith('.json'):
+                        config = json.load(f)
+                        custom_keywords = config
+                    elif config_file.endswith('.yml') or config_file.endswith('.yaml'):
+                        config = yaml.safe_load(f)
+                        custom_keywords = config.get('keywords', default_keywords)
+                    else:
+                        logger.warning(f"Unsupported file format: {config_file}")
+                        return default_keywords
+                        
+                logger.info(f"Loaded custom keywords from {config_file}")
                 return custom_keywords
             except Exception as e:
-                logger.error(f"Error loading keywords from {keywords_file}: {e}")
+                logger.error(f"Error loading keywords from {config_file}: {e}")
                 return default_keywords
         else:
             logger.info("Using default keywords")

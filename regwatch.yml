@@ -1,0 +1,39 @@
+# Lookback window in hours and max fallback items if nothing new
+window_hours: 36
+max_items: 50
+
+# Official sources (RSS or landing pages; the script auto-discovers feed links)
+sources:
+  aviation:
+    - https://www.easa.europa.eu/en/rss
+    - https://www.faa.gov/newsroom
+    - https://www.faa.gov/about/initiatives/sms
+    - https://www.ntsb.gov/Pages/RSS.aspx
+  space:
+    - https://www.fcc.gov/news-events/rss-feeds-and-email-updates-fcc
+    - https://www.fcc.gov/news-events/rss-feeds-email-signup/ecfs-rss-feeds
+    - https://www.esa.int/Services/RSS_Feeds
+    - https://www.ofcom.org.uk/spectrum/space-and-satellites
+  pharma:
+    - https://www.ema.europa.eu/en/news-events/rss-feeds
+    - https://www.ema.europa.eu/en/news-events/whats-new
+    - https://www.fda.gov/about-fda/contact-fda/subscribe-podcasts-and-news-feeds
+    - https://www.fda.gov/medical-devices/medical-devices-news-and-events
+    - https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en
+  automotive:
+    - https://www.consilium.europa.eu/en/about-site/rss/
+    - https://transport.ec.europa.eu/index_en
+    - https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en
+    - https://www.transportation.gov/rss
+  crossIndustry:
+    - https://www.consilium.europa.eu/en/about-site/rss/
+    - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    - https://eur-lex.europa.eu/content/help/my-eurlex/my-rss-feeds.html?locale=en
+
+# Keyword cues per section (classification uses the section with most matches)
+keywords:
+  aviation: ["EASA","FAA","SMS","airworthiness","airworthiness directive","AD","AMC","GM","Part-145","SIB","NTSB"]
+  space: ["FCC","Part 25","satellite","earth station","licensing","NGSO","GSO","spectrum","Ofcom","ESA"]
+  pharma: ["EMA","CHMP","MDCG","MDR","IVDR","EUDAMED","QMSR","CDRH","HTA","HTAR","ATMP"]
+  automotive: ["Euro 7","type approval","EV","battery regulation","battery passport","CO2 standards","ZEV","tariff","anti-subsidy"]
+  crossIndustry: ["AI Act","GPAI","CSRD","CSDDD","due diligence","taxonomy","CE marking","standardisation"]
