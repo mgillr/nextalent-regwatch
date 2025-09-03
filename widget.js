@@ -1,0 +1,272 @@
+// Nextalent Regulatory Radar Widget
+// Generated: 2025-09-03T08:44:42Z
+(function() {
+  const data = {
+  "lastUpdated": "2025-09-03T08:44:42Z",
+  "sections": {
+    "aviation": [
+      {
+        "title": "EASA launches new film addressing passengers for an even safer, greener future for air travel",
+        "summary": "Today, EASA proudly launches its new corporate film, putting the spotlight on the people at the heart of European aviation—passengers. The film offers a glimpse into the essential work EASA does to enable the air travel experience for millions across Europe. From the moment a loved one greets you...",
+        "source": "News",
+        "published": "2025-09-01 21:00:00+00:00",
+        "url": "https://www.easa.europa.eu/newsroom-and-events/news/easa-launches-new-film-addressing-passengers-even-safer-greener-future-0",
+        "feed": "https://www.easa.europa.eu/newsroom-and-events/news/feed.xml"
+      }
+    ],
+    "space": [
+      {
+        "title": "Interview with Dr. Caleb Scharf",
+        "summary": "_________________________________________________________________________________________ In the following interview, questions from the interviewer, Fred Van Wert, are in bold, and Caleb Scharf&#8217;s responses are in regular text. _______________________________________________________________...",
+        "source": "NASA",
+        "published": "2025-09-03 00:38:54+00:00",
+        "url": "https://www.nasa.gov/general/interview-with-dr-caleb-scharf/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "NASA 2026 Human Lander Challenge",
+        "summary": "NASA’s Human Lander Challenge (HuLC) is an initiative supporting its Exploration Systems Development Mission Directorate’s (ESDMD’s) efforts to explore innovative solutions for a variety of known technology development areas for human landing systems (HLS). Landers are used to safely ferry astron...",
+        "source": "NASA",
+        "published": "2025-09-02 20:42:22+00:00",
+        "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-2026-human-lander-challenge/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Lydia Rodriguez Builds a Career of Service and Support at NASA",
+        "summary": "Lydia Rodriguez is an office administrator in the Flight Operations Directorate’s Operations Division and Operations Tools and Procedures Branch at NASA’s Johnson Space Center in Houston.&#160; Over nearly two decades, she has supported nine organizations, helping enable NASA’s missions and formi...",
+        "source": "NASA",
+        "published": "2025-09-02 20:28:17+00:00",
+        "url": "https://www.nasa.gov/centers-and-facilities/johnson/lydia-rodriguez-builds-a-career-of-service-and-support-at-nasa/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "What’s Up: September 2025 Skywatching Tips from NASA",
+        "summary": "Saturn’s spectacle, a Conjunction, and the Autumnal Equinox Saturn shines throughout the month, a conjunction sparkles in the sky, and we welcome the autumnal equinox. Skywatching Highlights Transcript What’s Up for September? Saturn puts on a spectacular show, a sunrise conjunction shines bright...",
+        "source": "NASA",
+        "published": "2025-09-02 15:36:03+00:00",
+        "url": "https://science.nasa.gov/centers-and-facilities/jpl/whats-up-september-2025-skywatching-tips-from-nasa/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Circular Star Trails",
+        "summary": "On July 26, 2025, NASA astronaut Nichole Ayers took this long-exposure photograph – taken over 31 minutes from a window inside the International Space Station’s Kibo laboratory module – capturing the circular arcs of star trails. In its third decade of continuous human presence, the space station...",
+        "source": "NASA",
+        "published": "2025-09-02 14:17:28+00:00",
+        "url": "https://www.nasa.gov/image-article/circular-star-trails/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth",
+        "summary": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth A NASA-sponsored team is advancing single-photon sensing Complementary Metal-Oxide-Semiconductor (CMOS) detector technology that will enable future NASA astrophysics space missions to search for life on other...",
+        "source": "NASA",
+        "published": "2025-09-02 14:00:32+00:00",
+        "url": "https://science.nasa.gov/directorates/stmd/advancing-single-photon-sensing-image-sensors-to-enable-the-search-for-life-beyond-earth/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Tech From NASA’s Hurricane-hunting TROPICS Flies on Commercial Satellites",
+        "summary": "NASA science and American industry have worked hand-in-hand for more than 60 years, transforming novel technologies created with NASA research into commercial products like cochlear implants, memory-foam mattresses, and more. Now, a NASA-funded device for probing the interior of storm systems has...",
+        "source": "NASA",
+        "published": "2025-09-02 13:53:35+00:00",
+        "url": "https://www.nasa.gov/earth/tech-from-nasas-hurricane-hunting-tropics-flies-on-commercial-satellites/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "New MetOp Second Generation weather satellite returns first data",
+        "summary": "Less than three weeks since the first MetOp Second Generation weather satellite, MetOp-SG-A1, was launched, this remarkable new satellite has already started transmitting data from two of its cutting-edge instruments, offering a tantalising glimpse of what’s to come.",
+        "source": "ESA Top News",
+        "published": "2025-09-02 08:00:00+00:00",
+        "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/New_MetOp_Second_Generation_weather_satellite_returns_first_data",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "NASA Astronaut Megan McArthur Retires",
+        "summary": "NASA astronaut Megan McArthur has retired, concluding a career spanning more than two decades. A veteran of two spaceflights, McArthur logged 213 days in space, including being the first woman to pilot a SpaceX Dragon spacecraft and the last person to “touch” the Hubble Space Telescope with the s...",
+        "source": "NASA",
+        "published": "2025-08-29 15:21:40+00:00",
+        "url": "https://www.nasa.gov/news-release/nasa-astronaut-megan-mcarthur-retires/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Landsat 9 Sees Buccaneer Archipelago",
+        "summary": "The Operational Land Imager on&#160;Landsat 9&#160;captured this image of Buccaneer Archipelago on June 11, 2025.&#160;The scene encapsulates the striking interactions between land and water in the area where King Sound opens to the Indian Ocean. The powerful tidal currents stir up sediment in sh...",
+        "source": "NASA",
+        "published": "2025-08-29 15:08:27+00:00",
+        "url": "https://www.nasa.gov/image-article/landsat-9-sees-buccaneer-archipelago/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Week in images: 25-29 August 2025",
+        "summary": "Week in images: 25-29 August 2025 Discover our week through the lens",
+        "source": "ESA Top News",
+        "published": "2025-08-29 13:10:00+00:00",
+        "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_25-29_August_2025",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "Dusty wisps round a dusty disc",
+        "summary": "For this new&nbsp; Picture of the Month &nbsp;feature, the NASA/ESA/CSA&nbsp; James Webb Space Telescope &nbsp;has provided a fantastic new view of IRAS 04302+2247, a planet-forming disc located about 525 light-years away in a dark cloud within the Taurus star-forming region. With Webb, researche...",
+        "source": "ESA Top News",
+        "published": "2025-08-29 08:00:00+00:00",
+        "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Dusty_wisps_round_a_dusty_disc",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "Izaña-2 joins the laser game to track space debris",
+        "summary": "Video: 00:09:30 In Tenerife, Spain, stands a unique duo: ESA’s Izaña-1 and Izaña-2 laser-ranging stations. Together, they form an optical technology testbed of the European Space Agency that takes the monitoring of space debris and satellites to a new level while maturing new technologies for com...",
+        "source": "ESA Top News",
+        "published": "2025-08-28 08:00:00+00:00",
+        "url": "https://www.esa.int/ESA_Multimedia/Videos/2025/08/Izana-2_joins_the_laser_game_to_track_space_debris",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "Algae bloom chlorophyll South Australia",
+        "summary": "Image: This Copernicus Sentinel-3 image shows high concentrations of chlorophyll in yellow-green along the coastline of South Australia, near Adelaide. Chlorophyll-a is a key indicator of the presence of algae in the ocean.",
+        "source": "ESA Top News",
+        "published": "2025-08-27 13:18:00+00:00",
+        "url": "https://www.esa.int/ESA_Multimedia/Images/2025/08/Algae_bloom_chlorophyll_South_Australia",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "ESA and JAXA advance potential Apophis mission collaboration",
+        "summary": "The Japan Aerospace Exploration Agency ( JAXA ) has requested funding to participate in the European Space Agency’s (ESA) Rapid Apophis Mission for Space Safety ( Ramses ).",
+        "source": "ESA Top News",
+        "published": "2025-08-27 12:00:00+00:00",
+        "url": "https://www.esa.int/Space_Safety/Planetary_Defence/ESA_and_JAXA_advance_potential_Apophis_mission_collaboration",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      }
+    ],
+    "pharma": [
+      {
+        "title": "FDA Urges Nicotine Pouch Manufacturers To Use Child-Resistant Packaging Following Increasing Reports of Accidental Exposure",
+        "summary": "The U.S. Food and Drug Administration calls on nicotine pouch manufacturers to use child-resistant packaging to protect American children from accidental, harmful exposure.",
+        "source": "FDA Press Releases RSS Feed",
+        "published": "2025-09-02 14:59:10+00:00",
+        "url": "http://www.fda.gov/news-events/press-announcements/fda-urges-nicotine-pouch-manufacturers-use-child-resistant-packaging-following-increasing-reports",
+        "feed": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"
+      }
+    ],
+    "automotive": [],
+    "crossIndustry": [
+      {
+        "title": "Juno Detected the Final Missing Auroral Signature from Jupiter’s Four Largest Moons",
+        "summary": "Jupiter hosts the brightest and most spectacular auroras in the Solar System. Near its poles, these shimmering lights offer a glimpse into how the planet interacts with the solar wind and moons swept by Jupiter’s magnetic field. Unlike Earth’s northern lights, the largest moons of Jupiter create ...",
+        "source": "NASA",
+        "published": "2025-09-03 00:56:53+00:00",
+        "url": "https://science.nasa.gov/missions/juno/juno-detected-the-final-missing-auroral-signature-from-jupiters-four-largest-moons/",
+        "feed": "https://www.nasa.gov/feed/"
+      },
+      {
+        "title": "Some Air Cleaners Release Harmful By-Products. Now We Have a Way to Measure Them.",
+        "summary": "Many types of air cleaners can generate small amounts of air pollution. Until now, there was no standard way to measure these negative by-products.",
+        "source": "NIST News",
+        "published": "2025-09-02 12:00:00+00:00",
+        "url": "https://www.nist.gov/news-events/news/2025/09/some-air-cleaners-release-harmful-products-now-we-have-way-measure-them",
+        "feed": "https://www.nist.gov/news-events/news/rss.xml"
+      },
+      {
+        "title": "Double trouble: Solar Orbiter traces superfast electrons back to Sun",
+        "summary": "The European Space Agency-led Solar Orbiter mission has split the flood of energetic particles flung out into space from the Sun into two groups, tracing each back to a different kind of outburst from our star.",
+        "source": "ESA Top News",
+        "published": "2025-09-01 07:00:00+00:00",
+        "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Double_trouble_Solar_Orbiter_traces_superfast_electrons_back_to_Sun",
+        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+      },
+      {
+        "title": "NIST Revises Security and Privacy Control Catalog to Improve Software Update and Patch Releases",
+        "summary": "The catalog revision is part of NIST’s response to a recent executive order on strengthening the nation’s cybersecurity.",
+        "source": "NIST News",
+        "published": "2025-08-27 12:00:00+00:00",
+        "url": "https://www.nist.gov/news-events/news/2025/08/nist-revises-security-and-privacy-control-catalog-improve-software-update",
+        "feed": "https://www.nist.gov/news-events/news/rss.xml"
+      }
+    ]
+  }
+};
+  
+  // Widget rendering code
+  function renderWidget(container) {
+    if (!container) return;
+    
+    // Create widget HTML
+    let html = '<div class="nextalent-regwatch-widget">';
+    html += '<h2>Regulatory Radar</h2>';
+    html += '<p>Last updated: ' + new Date(data.lastUpdated).toLocaleString() + '</p>';
+    
+    // Render sections
+    for (const [section, items] of Object.entries(data.sections)) {
+      if (items.length === 0) continue;
+      
+      const sectionTitle = section.charAt(0).toUpperCase() + section.slice(1);
+      html += '<div class="section">';
+      html += '<h3>' + sectionTitle + '</h3>';
+      html += '<ul>';
+      
+      for (const item of items) {
+        html += '<li>';
+        html += '<a href="' + item.url + '" target="_blank">' + item.title + '</a>';
+        html += '<span class="source">' + item.source + '</span>';
+        html += '</li>';
+      }
+      
+      html += '</ul>';
+      html += '</div>';
+    }
+    
+    html += '</div>';
+    
+    // Add CSS
+    const style = document.createElement('style');
+    style.textContent = `
+      .nextalent-regwatch-widget {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .nextalent-regwatch-widget h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .nextalent-regwatch-widget .section {
+        margin-bottom: 20px;
+      }
+      .nextalent-regwatch-widget h3 {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+      }
+      .nextalent-regwatch-widget ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .nextalent-regwatch-widget li {
+        margin-bottom: 8px;
+      }
+      .nextalent-regwatch-widget .source {
+        display: block;
+        font-size: 0.8em;
+        color: #666;
+      }
+    `;
+    
+    // Render to container
+    container.innerHTML = html;
+    document.head.appendChild(style);
+  }
+  
+  // Initialize widget when DOM is ready
+  function init() {
+    const container = document.getElementById('nextalent-regwatch-container');
+    renderWidget(container);
+  }
+  
+  // Check if DOM is already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
