@@ -47,8 +47,23 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add regwatch.json regwatch-*.json widget.js index.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update RegWatch data [skip ci]" && git push)
+          git add out/
+          if [ -f "regwatch.json" ]; then
+            git add regwatch.json
+          fi
+          if ls regwatch-*.json 1> /dev/null 2>&1; then
+            git add regwatch-*.json
+          fi
+          if [ -f "widget.js" ]; then
+            git add widget.js
+          fi
+          if [ -f "index.html" ]; then
+            git add index.html
+          fi
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            git commit -m "Update RegWatch data [skip ci]"
+            git push https://${GITHUB_TOKEN}@github.com/mgillr/nextalent-regwatch.git HEAD:master
+          fi
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
