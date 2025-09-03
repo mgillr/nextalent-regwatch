@@ -50,8 +50,13 @@ def load_config(path="regwatch.yml") -> dict:
 def discover_feeds(url: str) -> List[str]:
     """Return list of feed URLs discovered on a landing page."""
     found = []
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5"
+    }
     try:
-        r = requests.get(url, timeout=25)
+        r = requests.get(url, headers=headers, timeout=25)
         r.raise_for_status()
     except Exception:
         return found
@@ -94,7 +99,12 @@ def harvest_all_sources(sources: Dict[str, List[str]]) -> Dict[str, List[str]]:
 
 # ---------- Feed parsing ----------
 def parse_feed(url: str) -> List[dict]:
-    d = feedparser.parse(url)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept": "application/rss+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5"
+    }
+    d = feedparser.parse(url, request_headers=headers)
     out = []
     for e in d.entries:
         # pick any available timestamp

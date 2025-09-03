@@ -6,6 +6,8 @@ max_items: 50
 sources:
   aviation:
     - https://www.easa.europa.eu/en/rss
+    - https://www.easa.europa.eu/newsroom-and-events/news/feed.xml
+    - https://www.easa.europa.eu/newsroom-and-events/press-releases/feed.xml
     - https://www.faa.gov/newsroom
     - https://www.faa.gov/about/initiatives/sms
     - https://www.ntsb.gov/Pages/RSS.aspx
@@ -42,6 +44,8 @@ sources:
     - https://www.ema.europa.eu/en/news-events/rss-feeds
     - https://www.ema.europa.eu/en/news-events/whats-new
     - https://www.fda.gov/about-fda/contact-fda/subscribe-podcasts-and-news-feeds
+    - https://www.fda.gov/about-fda/contact-fda/rss-feeds/drug-safety-podcasts.xml
+    - https://www.fda.gov/about-fda/contact-fda/rss-feeds/medwatch-safety-alerts.xml
     - https://www.fda.gov/medical-devices/medical-devices-news-and-events
     - https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en
     # Global harmonisation / pharmacopeias / national regulators
@@ -72,6 +76,7 @@ sources:
     - https://transport.ec.europa.eu/index_en
     - https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en
     - https://www.transportation.gov/rss
+    - https://www.nhtsa.gov/rss.xml
     # UN/EU/US technical regs & safety
     - https://unece.org/transport/vehicle-regulations/world-forum-harmonization-vehicle-regulations-wp29
     - https://unece.org/transport/road-transport/working-party-automatedautonomous-and-connected-vehicles-introduction
@@ -86,6 +91,8 @@ sources:
     - https://www.consilium.europa.eu/en/about-site/rss/
     - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
     - https://eur-lex.europa.eu/content/help/my-eurlex/my-rss-feeds.html?locale=en
+    - https://www.nist.gov/news-events/news/rss.xml
+    - https://csrc.nist.gov/CSRC/media/feeds/news/rss.xml
     # Cyber/AI/Data/chemicals + fusion + PQC (UK/EU/US)
     - https://csrc.nist.gov/publications/drafts-open-for-comment
     - https://csrc.nist.gov/news
