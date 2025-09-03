@@ -78,7 +78,68 @@ MIN_POSITIVE_HITS = 1
 # they are highly relevant and not just generic standards updates
 MIN_CROSS_INDUSTRY_HITS = 2
 
+# CROSS_INDUSTRY_BLOCKLIST: patterns that should be blocked from cross-industry section
+CROSS_INDUSTRY_BLOCKLIST = [
+    r"ISO\s*[/]?[A-Z]*\s*\d+",  # Match ISO standards like ISO 9001, ISO/IEC 27001, etc.
+    r"IEC\s*\d+",               # Match IEC standards
+    r"EN\s*\d+",                # Match EN standards
+    r"ASTM\s*[A-Z]*\d+",        # Match ASTM standards
+    r"BS\s*\d+",                # Match British Standards
+    r"DIN\s*\d+",               # Match German Standards
+    r"JIS\s*[A-Z]*\d+",         # Match Japanese Standards
+    r"circular economy",        # Generic circular economy standards
+    r"management system",       # Generic management system standards
+    r"vocabulary",              # Standards defining vocabulary
+    r"guidance",                # Generic guidance documents
+    r"small craft",             # Boat standards
+    r"rubber",                  # Rubber standards
+    r"vulcanized",              # Rubber processing
+    r"thermoplastic",           # Plastic standards
+    r"petroleum",               # Petroleum standards
+    r"boiling range",           # Petroleum testing
+    r"biomimetics",             # Biomimetics standards
+    r"titanium dioxide",        # Chemical standards
+    r"paper",                   # Paper standards
+    r"board",                   # Board standards
+]
+
+# HIGH_IMPACT_PATTERNS: patterns that indicate high-impact regulatory content
+HIGH_IMPACT_PATTERNS = [
+    r"AI Act",
+    r"AI Bill of Rights",
+    r"NIST AI",
+    r"artificial intelligence",
+    r"cybersecurity",
+    r"critical infrastructure",
+    r"NIS2",
+    r"DORA",
+    r"Data Act",
+    r"Cyber Resilience Act",
+    r"quantum",
+    r"fusion energy",
+    r"advanced reactor",
+    r"CHIPS Act",
+    r"semiconductor",
+    r"DARPA",
+]
+
 # ---------- Utils ----------
+
+def is_blocked_for_cross_industry(text):
+    """Check if the text contains patterns that should be blocked from cross-industry section"""
+    text = text.lower()
+    for pattern in CROSS_INDUSTRY_BLOCKLIST:
+        if re.search(pattern.lower(), text):
+            return True
+    return False
+
+def is_high_impact_content(text):
+    """Check if the text contains patterns that indicate high-impact regulatory content"""
+    text = text.lower()
+    for pattern in HIGH_IMPACT_PATTERNS:
+        if re.search(pattern.lower(), text):
+            return True
+    return False
 def now_utc() -> datetime:
     return datetime.now(tz=UTC)
 
@@ -311,8 +372,26 @@ def build_digest(items: List[dict], cfg: dict) -> dict:
             # Apply different thresholds based on section
             required_hits = MIN_CROSS_INDUSTRY_HITS if sec == "crossIndustry" else MIN_POSITIVE_HITS
             
-            if hits >= required_hits:
-                cleaned.append(it)
+            # For cross-industry, apply special filtering rules
+            if sec == "crossIndustry":
+                item_text = f"{it['title']} {it['summary']}"
+                
+                # 1. Block generic standards and irrelevant content
+                if is_blocked_for_cross_industry(item_text):
+                    continue
+                
+                # 2. Always include high-impact regulatory content regardless of keyword hits
+                if is_high_impact_content(item_text):
+                    cleaned.append(it)
+                    continue
+                
+                # 3. For other content, require higher threshold of keyword matches
+                if hits >= required_hits:
+                    cleaned.append(it)
+            else:
+                # For industry-specific sections, use normal threshold
+                if hits >= required_hits:
+                    cleaned.append(it)
         if cleaned:
             cleaned_sections[sec] = cleaned
 
