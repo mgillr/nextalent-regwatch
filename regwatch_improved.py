@@ -21,6 +21,49 @@ from bs4 import BeautifulSoup
 import feedparser
 import yaml
 
+
+def is_tech_focused(item, tech_keywords):
+    """Check if an item is focused on technology, R&D, or regulatory content"""
+    text = f"{item.get('title', '')} {item.get('summary', '')}".lower()
+    
+    # Count the number of tech keywords in the text
+    tech_keyword_count = sum(1 for kw in tech_keywords if kw.lower() in text)
+    
+    # Check for regulatory terms
+    regulatory_terms = [
+        "regulation", "directive", "standard", "compliance", "certification",
+        "safety", "security", "guideline", "framework", "policy", "requirement",
+        "technical specification", "protocol", "iso", "iec", "etsi", "cen", 
+        "cenelec", "astm", "ieee", "itu", "approval", "authorization"
+    ]
+    regulatory_count = sum(1 for term in regulatory_terms if term in text)
+    
+    # Check for R&D terms
+    rd_terms = [
+        "research", "development", "innovation", "technology", "technical", 
+        "engineering", "design", "prototype", "testing", "validation", "verification",
+        "experiment", "laboratory", "study", "analysis", "methodology", "algorithm",
+        "system", "architecture", "implementation", "performance", "efficiency",
+        "improvement", "enhancement", "advancement", "breakthrough", "discovery"
+    ]
+    rd_count = sum(1 for term in rd_terms if term in text)
+    
+    # Check for non-technical terms that indicate general news
+    general_news_terms = [
+        "interview", "appointment", "promotion", "hire", "join", "welcome",
+        "congratulate", "award", "recognition", "celebrate", "anniversary",
+        "event", "conference", "webinar", "workshop", "meeting", "summit",
+        "exhibition", "expo", "show", "fair", "festival", "competition",
+        "contest", "challenge", "hackathon", "datathon", "week in", "month in",
+        "year in", "review", "recap", "summary", "highlights", "roundup"
+    ]
+    general_news_count = sum(1 for term in general_news_terms if term in text)
+    
+    # Calculate a relevance score
+    relevance_score = tech_keyword_count * 2 + regulatory_count + rd_count - general_news_count
+    
+    # Return True if the item is tech-focused
+    return relevance_score >= 2
 UTC = timezone.utc
 
 # ---------- Utils ----------
@@ -190,6 +233,15 @@ def build_digest(items: List[dict], cfg: dict) -> dict:
         # fallback to latest N across everything
         items_sorted = sorted(items, key=lambda x: x["published"] or datetime(1970,1,1,tzinfo=UTC), reverse=True)
         fresh = items_sorted[: int(cfg["max_items"])]
+
+    # Flatten all keywords into a single list for tech focus check
+    all_keywords = []
+    for section_keywords in cfg["keywords"].values():
+        all_keywords.extend(section_keywords)
+    all_keywords = list(set(all_keywords))
+    
+    # Filter for tech-focused items
+    fresh = [it for it in fresh if is_tech_focused(it, all_keywords)]
 
     # classify
     keywords = cfg["keywords"]

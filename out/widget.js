@@ -1,5 +1,5 @@
 // Nextalent Regulatory Radar Widget
-// Generated: 2025-09-03T08:57:35Z
+// Generated: 2025-09-03T09:11:19Z
 (function() {
   const data = {
   "lastUpdated": "2025-09-03T08:44:42Z",
@@ -16,14 +16,6 @@
     ],
     "space": [
       {
-        "title": "Interview with Dr. Caleb Scharf",
-        "summary": "_________________________________________________________________________________________ In the following interview, questions from the interviewer, Fred Van Wert, are in bold, and Caleb Scharf&#8217;s responses are in regular text. _______________________________________________________________...",
-        "source": "NASA",
-        "published": "2025-09-03T00:38:54Z",
-        "url": "https://www.nasa.gov/general/interview-with-dr-caleb-scharf/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
         "title": "NASA 2026 Human Lander Challenge",
         "summary": "NASA’s Human Lander Challenge (HuLC) is an initiative supporting its Exploration Systems Development Mission Directorate’s (ESDMD’s) efforts to explore innovative solutions for a variety of known technology development areas for human landing systems (HLS). Landers are used to safely ferry astron...",
         "source": "NASA",
@@ -37,14 +29,6 @@
         "source": "NASA",
         "published": "2025-09-02T20:28:17Z",
         "url": "https://www.nasa.gov/centers-and-facilities/johnson/lydia-rodriguez-builds-a-career-of-service-and-support-at-nasa/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "What’s Up: September 2025 Skywatching Tips from NASA",
-        "summary": "Saturn’s spectacle, a Conjunction, and the Autumnal Equinox Saturn shines throughout the month, a conjunction sparkles in the sky, and we welcome the autumnal equinox. Skywatching Highlights Transcript What’s Up for September? Saturn puts on a spectacular show, a sunrise conjunction shines bright...",
-        "source": "NASA",
-        "published": "2025-09-02T15:36:03Z",
-        "url": "https://science.nasa.gov/centers-and-facilities/jpl/whats-up-september-2025-skywatching-tips-from-nasa/",
         "feed": "https://www.nasa.gov/feed/"
       },
       {
@@ -88,22 +72,6 @@
         "feed": "https://www.nasa.gov/feed/"
       },
       {
-        "title": "Landsat 9 Sees Buccaneer Archipelago",
-        "summary": "The Operational Land Imager on&#160;Landsat 9&#160;captured this image of Buccaneer Archipelago on June 11, 2025.&#160;The scene encapsulates the striking interactions between land and water in the area where King Sound opens to the Indian Ocean. The powerful tidal currents stir up sediment in sh...",
-        "source": "NASA",
-        "published": "2025-08-29T15:08:27Z",
-        "url": "https://www.nasa.gov/image-article/landsat-9-sees-buccaneer-archipelago/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Week in images: 25-29 August 2025",
-        "summary": "Week in images: 25-29 August 2025 Discover our week through the lens",
-        "source": "ESA Top News",
-        "published": "2025-08-29T13:10:00Z",
-        "url": "https://www.esa.int/About_Us/Week_in_images/Week_in_images_25-29_August_2025",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
         "title": "Dusty wisps round a dusty disc",
         "summary": "For this new&nbsp; Picture of the Month &nbsp;feature, the NASA/ESA/CSA&nbsp; James Webb Space Telescope &nbsp;has provided a fantastic new view of IRAS 04302+2247, a planet-forming disc located about 525 light-years away in a dark cloud within the Taurus star-forming region. With Webb, researche...",
         "source": "ESA Top News",
@@ -136,16 +104,7 @@
         "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
       }
     ],
-    "pharma": [
-      {
-        "title": "FDA Urges Nicotine Pouch Manufacturers To Use Child-Resistant Packaging Following Increasing Reports of Accidental Exposure",
-        "summary": "The U.S. Food and Drug Administration calls on nicotine pouch manufacturers to use child-resistant packaging to protect American children from accidental, harmful exposure.",
-        "source": "FDA Press Releases RSS Feed",
-        "published": "2025-09-02T14:59:10Z",
-        "url": "http://www.fda.gov/news-events/press-announcements/fda-urges-nicotine-pouch-manufacturers-use-child-resistant-packaging-following-increasing-reports",
-        "feed": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"
-      }
-    ],
+    "pharma": [],
     "automotive": [],
     "crossIndustry": [
       {
@@ -155,14 +114,6 @@
         "published": "2025-09-03T00:56:53Z",
         "url": "https://science.nasa.gov/missions/juno/juno-detected-the-final-missing-auroral-signature-from-jupiters-four-largest-moons/",
         "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Some Air Cleaners Release Harmful By-Products. Now We Have a Way to Measure Them.",
-        "summary": "Many types of air cleaners can generate small amounts of air pollution. Until now, there was no standard way to measure these negative by-products.",
-        "source": "NIST News",
-        "published": "2025-09-02T12:00:00Z",
-        "url": "https://www.nist.gov/news-events/news/2025/09/some-air-cleaners-release-harmful-products-now-we-have-way-measure-them",
-        "feed": "https://www.nist.gov/news-events/news/rss.xml"
       },
       {
         "title": "Double trouble: Solar Orbiter traces superfast electrons back to Sun",
