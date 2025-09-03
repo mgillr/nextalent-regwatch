@@ -438,14 +438,14 @@ def write_widget_js(digest: dict, out_dir="out"):
     js = f"""(()=>{{
   const DATA = {data};
   function esc(s){{return (s||"").replace(/[&<>"]/g, c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}})[c]||c);}}
-  function titleMap(k){{return ({{aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",crossIndustry:"Cross‑industry"}})[k]||k;}}
+  function titleMap(k){{return ({{aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"}})[k]||k;}}
   function render(id) {{
     const root = document.getElementById(id||"regwatch-root"); if(!root) return;
     const wrap = document.createElement("div"); wrap.className="regwatch";
     const h1 = document.createElement("h1"); h1.textContent="Daily Regulatory Brief"; wrap.appendChild(h1);
     const meta = document.createElement("div"); meta.style.opacity=".7"; meta.style.margin="0 0 1rem";
     meta.textContent="Updated " + new Date(DATA.lastUpdated).toUTCString(); wrap.appendChild(meta);
-    const order = ["crossIndustry","automotive","pharma","aviation","space"];
+    const order = ["crossIndustry","deeptech","infotech","automotive","pharma","aviation","space"];
     for(const k of order){{
       const arr = (DATA.sections||{{}})[k]; if(!arr||!arr.length) continue;
       const h2=document.createElement("h2"); h2.textContent=titleMap(k); wrap.appendChild(h2);
