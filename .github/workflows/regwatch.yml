@@ -26,7 +26,7 @@ jobs:
       
       - name: Run RegWatch collector
         run: |
-          python regwatch.py
+          python regwatch_improved.py
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
