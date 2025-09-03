@@ -1,132 +1,108 @@
 {
-  "lastUpdated": "2025-09-03T08:44:42Z",
+  "lastUpdated": "2025-09-03T13:29:13Z",
   "sections": {
-    "aviation": [
-      {
-        "title": "EASA launches new film addressing passengers for an even safer, greener future for air travel",
-        "summary": "Today, EASA proudly launches its new corporate film, putting the spotlight on the people at the heart of European aviation—passengers. The film offers a glimpse into the essential work EASA does to enable the air travel experience for millions across Europe. From the moment a loved one greets you...",
-        "source": "News",
-        "published": "2025-09-01T21:00:00Z",
-        "url": "https://www.easa.europa.eu/newsroom-and-events/news/easa-launches-new-film-addressing-passengers-even-safer-greener-future-0",
-        "feed": "https://www.easa.europa.eu/newsroom-and-events/news/feed.xml"
-      }
-    ],
     "space": [
       {
-        "title": "NASA 2026 Human Lander Challenge",
-        "summary": "NASA’s Human Lander Challenge (HuLC) is an initiative supporting its Exploration Systems Development Mission Directorate’s (ESDMD’s) efforts to explore innovative solutions for a variety of known technology development areas for human landing systems (HLS). Landers are used to safely ferry astron...",
-        "source": "NASA",
-        "published": "2025-09-02T20:42:22Z",
-        "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-2026-human-lander-challenge/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Lydia Rodriguez Builds a Career of Service and Support at NASA",
-        "summary": "Lydia Rodriguez is an office administrator in the Flight Operations Directorate’s Operations Division and Operations Tools and Procedures Branch at NASA’s Johnson Space Center in Houston.&#160; Over nearly two decades, she has supported nine organizations, helping enable NASA’s missions and formi...",
-        "source": "NASA",
-        "published": "2025-09-02T20:28:17Z",
-        "url": "https://www.nasa.gov/centers-and-facilities/johnson/lydia-rodriguez-builds-a-career-of-service-and-support-at-nasa/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Circular Star Trails",
-        "summary": "On July 26, 2025, NASA astronaut Nichole Ayers took this long-exposure photograph – taken over 31 minutes from a window inside the International Space Station’s Kibo laboratory module – capturing the circular arcs of star trails. In its third decade of continuous human presence, the space station...",
-        "source": "NASA",
-        "published": "2025-09-02T14:17:28Z",
-        "url": "https://www.nasa.gov/image-article/circular-star-trails/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth",
-        "summary": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth A NASA-sponsored team is advancing single-photon sensing Complementary Metal-Oxide-Semiconductor (CMOS) detector technology that will enable future NASA astrophysics space missions to search for life on other...",
-        "source": "NASA",
-        "published": "2025-09-02T14:00:32Z",
-        "url": "https://science.nasa.gov/directorates/stmd/advancing-single-photon-sensing-image-sensors-to-enable-the-search-for-life-beyond-earth/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Tech From NASA’s Hurricane-hunting TROPICS Flies on Commercial Satellites",
-        "summary": "NASA science and American industry have worked hand-in-hand for more than 60 years, transforming novel technologies created with NASA research into commercial products like cochlear implants, memory-foam mattresses, and more. Now, a NASA-funded device for probing the interior of storm systems has...",
-        "source": "NASA",
-        "published": "2025-09-02T13:53:35Z",
-        "url": "https://www.nasa.gov/earth/tech-from-nasas-hurricane-hunting-tropics-flies-on-commercial-satellites/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "New MetOp Second Generation weather satellite returns first data",
-        "summary": "Less than three weeks since the first MetOp Second Generation weather satellite, MetOp-SG-A1, was launched, this remarkable new satellite has already started transmitting data from two of its cutting-edge instruments, offering a tantalising glimpse of what’s to come.",
-        "source": "ESA Top News",
-        "published": "2025-09-02T08:00:00Z",
-        "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/New_MetOp_Second_Generation_weather_satellite_returns_first_data",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "NASA Astronaut Megan McArthur Retires",
-        "summary": "NASA astronaut Megan McArthur has retired, concluding a career spanning more than two decades. A veteran of two spaceflights, McArthur logged 213 days in space, including being the first woman to pilot a SpaceX Dragon spacecraft and the last person to “touch” the Hubble Space Telescope with the s...",
-        "source": "NASA",
-        "published": "2025-08-29T15:21:40Z",
-        "url": "https://www.nasa.gov/news-release/nasa-astronaut-megan-mcarthur-retires/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Dusty wisps round a dusty disc",
-        "summary": "For this new&nbsp; Picture of the Month &nbsp;feature, the NASA/ESA/CSA&nbsp; James Webb Space Telescope &nbsp;has provided a fantastic new view of IRAS 04302+2247, a planet-forming disc located about 525 light-years away in a dark cloud within the Taurus star-forming region. With Webb, researche...",
-        "source": "ESA Top News",
-        "published": "2025-08-29T08:00:00Z",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Dusty_wisps_round_a_dusty_disc",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "Izaña-2 joins the laser game to track space debris",
-        "summary": "Video: 00:09:30 In Tenerife, Spain, stands a unique duo: ESA’s Izaña-1 and Izaña-2 laser-ranging stations. Together, they form an optical technology testbed of the European Space Agency that takes the monitoring of space debris and satellites to a new level while maturing new technologies for com...",
-        "source": "ESA Top News",
-        "published": "2025-08-28T08:00:00Z",
-        "url": "https://www.esa.int/ESA_Multimedia/Videos/2025/08/Izana-2_joins_the_laser_game_to_track_space_debris",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "Algae bloom chlorophyll South Australia",
-        "summary": "Image: This Copernicus Sentinel-3 image shows high concentrations of chlorophyll in yellow-green along the coastline of South Australia, near Adelaide. Chlorophyll-a is a key indicator of the presence of algae in the ocean.",
-        "source": "ESA Top News",
-        "published": "2025-08-27T13:18:00Z",
-        "url": "https://www.esa.int/ESA_Multimedia/Images/2025/08/Algae_bloom_chlorophyll_South_Australia",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "ESA and JAXA advance potential Apophis mission collaboration",
-        "summary": "The Japan Aerospace Exploration Agency ( JAXA ) has requested funding to participate in the European Space Agency’s (ESA) Rapid Apophis Mission for Space Safety ( Ramses ).",
-        "source": "ESA Top News",
-        "published": "2025-08-27T12:00:00Z",
-        "url": "https://www.esa.int/Space_Safety/Planetary_Defence/ESA_and_JAXA_advance_potential_Apophis_mission_collaboration",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+        "title": "Delta Electronics CNCSoft-G2",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-25-240-04",
+        "source": "ICS Advisories",
+        "summary": "View CSAF 1. EXECUTIVE SUMMARY CVSS v4 8.5 ATTENTION : Low attack complexity Vendor : Delta Electronics Equipment : CNCSoft-G2 Vulnerability : Out-of-bounds Write 2. RISK EVALUATION Successful exploitation of this vulnerability could allow attackers to execute arbitrary code on affected installations of the device. 3. TECHNICAL DETAILS 3.1 AFFECTED PRODUCTS The following versions of Delta Electronics CNCSoft-G2 are affected: CNCSoft-G2: Version 2.1.0.20 and prior 3.2 VULNERABILITY OVERVIEW 3.2.1 OUT-OF-BOUNDS WRITE CWE-787 Delta Electronics CNCSoft-G2 is vulnerable to a flaw in the parsing of DPAX files that allows attackers to execute arbitrary code. This vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file. Exploitation of this flaw can result in memory corruption and code execution within the context of the current process. CVE-2025-47728 has been assigned to this vulnerability. A CVSS v3.1 base score of 7.8 has been calculated; the CVSS vector string is ( AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H ). A CVSS v4 score has also been calculated for CVE-2025-47728 . A base score of 8.5 has been calculated; the CVSS vector string is ( AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N ). 3.3 BACKGROUND CRITICAL INFRASTRUCTURE SECTORS: Critical Manufacturing, Energy COUNTRIES/AREAS DEPLOYED: Worldwide COMPANY HEADQUARTERS LOCATION: Taiwan 3.4 RESEARCHER Natnael Samson (@NattiSamson) working with Trend Micro Zero Day Initiative reported this vulnerability to CISA. 4. MITIGATIONS Delta Electronics recommends users update to v2.1.0.27 or later. Delta has published Delta-PCSA-2025-00007 in both English and Chinese on their security website to provide more details about these issues. Delta also recommends the following general security practices: Do not click on untrusted Internet links or open unsolicited attachments in emails. Avoid exposing control systems and equipment to the Internet. Place systems and devices behind a firewall and isolate them from the business network. When remote access is required, use a secure access method, such as a virtual private network (VPN). If you have any product-related support concerns, find a contact from Delta's portal page for any information or materials you may require. CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics . Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies . CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets . Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents. CISA also recommends users take the following measures to protect themselves from social engineering attacks: Refer to Recognizing and Avoiding Email Scams for more information on avoiding email scams. Refer to Avoiding Social Engineering and Phishing Attacks for more information on social engineering attacks. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely. 5. UPDATE HISTORY August 28, 2025: Initial Publication",
+        "published": "2025-08-28T12:00:00Z"
       }
     ],
-    "pharma": [],
-    "automotive": [],
+    "pharma": [
+      {
+        "title": "IMDRF Document Implementation Report",
+        "url": "https://www.imdrf.org/documents/imdrf-document-implementation-report-0",
+        "source": "IMDRF - Documents",
+        "summary": "IMDRF Document Implementation Report",
+        "published": "2025-09-01T00:44:57Z"
+      }
+    ],
     "crossIndustry": [
       {
-        "title": "Juno Detected the Final Missing Auroral Signature from Jupiter’s Four Largest Moons",
-        "summary": "Jupiter hosts the brightest and most spectacular auroras in the Solar System. Near its poles, these shimmering lights offer a glimpse into how the planet interacts with the solar wind and moons swept by Jupiter’s magnetic field. Unlike Earth’s northern lights, the largest moons of Jupiter create ...",
-        "source": "NASA",
-        "published": "2025-09-03T00:56:53Z",
-        "url": "https://science.nasa.gov/missions/juno/juno-detected-the-final-missing-auroral-signature-from-jupiters-four-largest-moons/",
-        "feed": "https://www.nasa.gov/feed/"
+        "title": "ISO/CD 14813-5 - Intelligent transport systems — Reference model architecture(s) for the ITS sector — Part 5: Requirements for architecture description in ITS standards",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92782.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 30.00 on 2025-09-02, TC/SC: ISO/TC 204",
+        "published": "2025-09-02T00:00:00Z"
       },
       {
-        "title": "Double trouble: Solar Orbiter traces superfast electrons back to Sun",
-        "summary": "The European Space Agency-led Solar Orbiter mission has split the flood of energetic particles flung out into space from the Sun into two groups, tracing each back to a different kind of outburst from our star.",
-        "source": "ESA Top News",
-        "published": "2025-09-01T07:00:00Z",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Double_trouble_Solar_Orbiter_traces_superfast_electrons_back_to_Sun",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
+        "title": "ISO/AWI 59010 - Circular economy — Guidance on the transition of business models and value networks",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92780.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 323",
+        "published": "2025-09-02T00:00:00Z"
       },
       {
-        "title": "NIST Revises Security and Privacy Control Catalog to Improve Software Update and Patch Releases",
-        "summary": "The catalog revision is part of NIST’s response to a recent executive order on strengthening the nation’s cybersecurity.",
-        "source": "NIST News",
-        "published": "2025-08-27T12:00:00Z",
-        "url": "https://www.nist.gov/news-events/news/2025/08/nist-revises-security-and-privacy-control-catalog-improve-software-update",
-        "feed": "https://www.nist.gov/news-events/news/rss.xml"
+        "title": "ISO/AWI 59004 - Circular economy — Vocabulary, principles and guidance for implementation",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92781.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 323",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/ASTM AWI 52971 - Additive manufacturing — Non-destructive testing and evaluation — Dimensional measurements on XrayComputed Tomography images",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/03/90330.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 261",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/AWI 59001 - Circular economy management systems — Requirements",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/08/06/80681.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 323",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/DIS 12401 - Small craft — Deck safety harness and safety line — Safety requirements and test methods",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/26/92674.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 40.00 on 2025-09-02, TC/SC: ISO/TC 188/SC 1",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/WD 26121 - Rubber, vulcanized or thermoplastic — Determination of Crosslink Density – Dynamic Mechanical Analyser Method",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/26/92672.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.20 on 2025-09-02, TC/SC: ISO/TC 45/SC 2",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/WD 26123 - Rubber, vulcanized or thermoplastic — Determination of Crosslink density of rubber vulcanizates – Solvent Swelling",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/26/92673.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.20 on 2025-09-02, TC/SC: ISO/TC 45/SC 2",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/IEC 9594-11:2025/CD Amd 1 - Information technology — Open systems interconnection directory — Part 11: Protocol specifications for secure operations — Amendment 1",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92778.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 30.99 on 2025-09-01, TC/SC: ISO/IEC JTC 1/SC 6, ICS: 35.100.70",
+        "published": "2025-09-01T00:00:00Z"
+      },
+      {
+        "title": "ISO/AWI 25895 - Biomimetics — Biomimetic development methodology — Products and processes",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/18/91868.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 10.99 on 2025-09-01, TC/SC: ISO/TC 266",
+        "published": "2025-09-01T00:00:00Z"
+      },
+      {
+        "title": "ISO/AWI 5647 - Paper and board — Determination of titanium dioxide content",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92774.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 10.99 on 2025-08-29, TC/SC: ISO/TC 6",
+        "published": "2025-08-29T00:00:00Z"
+      },
+      {
+        "title": "ISO/CD 3924 - Petroleum products — Determination of boiling range distribution — Gas chromatography method",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92772.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 30.99 on 2025-08-29, TC/SC: ISO/TC 28",
+        "published": "2025-08-29T00:00:00Z"
       }
     ]
   }
