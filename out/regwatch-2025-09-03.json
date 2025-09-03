@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-03T14:48:22Z",
+  "lastUpdated": "2025-09-03T15:30:52Z",
   "sections": {
     "space": [
       {
@@ -20,6 +20,27 @@
       }
     ],
     "crossIndustry": [
+      {
+        "title": "ISO/CD 14813-5 - Intelligent transport systems — Reference model architecture(s) for the ITS sector — Part 5: Requirements for architecture description in ITS standards",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92782.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 30.00 on 2025-09-02, TC/SC: ISO/TC 204",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/AWI 59010 - Circular economy — Guidance on the transition of business models and value networks",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92780.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 323",
+        "published": "2025-09-02T00:00:00Z"
+      },
+      {
+        "title": "ISO/AWI 59004 - Circular economy — Vocabulary, principles and guidance for implementation",
+        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92781.html",
+        "source": "ISO standards and projects",
+        "summary": "This document reached stage 20.00 on 2025-09-02, TC/SC: ISO/TC 323",
+        "published": "2025-09-02T00:00:00Z"
+      },
       {
         "title": "ISO/ASTM AWI 52971 - Additive manufacturing — Non-destructive testing and evaluation — Dimensional measurements on XrayComputed Tomography images",
         "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/03/90330.html",
@@ -81,27 +102,6 @@
         "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92772.html",
         "source": "ISO standards and projects",
         "summary": "This document reached stage 30.99 on 2025-08-29, TC/SC: ISO/TC 28",
-        "published": "2025-08-29T00:00:00Z"
-      },
-      {
-        "title": "ISO/AWI TR 26176 - Recycled iron-steel raw materials",
-        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/09/27/92773.html",
-        "source": "ISO standards and projects",
-        "summary": "This document reached stage 20.00 on 2025-08-29, TC/SC: ISO/TC 17",
-        "published": "2025-08-29T00:00:00Z"
-      },
-      {
-        "title": "ISO/AWI TS 25083 - Health informatics --Categorial structure of representation of Tuina and other types of manual therapies",
-        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/08/89/88919.html",
-        "source": "ISO standards and projects",
-        "summary": "This document reached stage 20.00 on 2025-08-29, TC/SC: ISO/TC 215",
-        "published": "2025-08-29T00:00:00Z"
-      },
-      {
-        "title": "ISO/AWI TS 32214 - Data Model for Carbon Credit Markets",
-        "url": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/77/77780.html",
-        "source": "ISO standards and projects",
-        "summary": "This document reached stage 10.99 on 2025-08-29, TC/SC: ISO/TC 322",
         "published": "2025-08-29T00:00:00Z"
       }
     ]
