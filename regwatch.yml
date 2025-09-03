@@ -9,7 +9,7 @@ sources:
     - https://www.faa.gov/newsroom
     - https://www.faa.gov/about/initiatives/sms
     - https://www.ntsb.gov/Pages/RSS.aspx
-# eVTOL / AAM / Vertiports (EU/UK/US)
+    # eVTOL / AAM / Vertiports (EU/UK/US)
     - https://www.easa.europa.eu/en/document-library/product-certification-consultations/special-condition-vtol
     - https://www.easa.europa.eu/en/domains/rotorcraft-vtol/VTOL
     - https://www.easa.europa.eu/en/document-library/general-publications/prototype-technical-design-specifications-vertiports
@@ -18,37 +18,93 @@ sources:
     - https://www.caa.co.uk/our-work/research-and-innovation/enabling-advanced-air-mobility/
     - https://jarus-rpas.org/publications/
     - https://www.eurocae.net/working-groups/
-# Hydrogen aviation (EU/US)
+    # Hydrogen / alternative propulsion (EU/US)
     - https://www.faa.gov/aircraft/air_cert/step/disciplines/propulsion_systems/hydrogen-fueled_aircraft_roadmap
     - https://www.faa.gov/regulationspolicies/rulemaking/committees/documents/hydrogen-aviation-working-group-hawg-tasking
     - https://www.easa.europa.eu/en/downloads/138051/en
+
   space:
     - https://www.fcc.gov/news-events/rss-feeds-and-email-updates-fcc
     - https://www.fcc.gov/news-events/rss-feeds-email-signup/ecfs-rss-feeds
     - https://www.esa.int/Services/RSS_Feeds
     - https://www.ofcom.org.uk/spectrum/space-and-satellites
-    - https://www.fcc.gov/document/fcc-adopts-new-5-year-rule-deorbiting-satellites-0
-    - https://docs.fcc.gov/public/attachments/FCC-24-6A1.pdf
-    - https://www.ofcom.org.uk/spectrum/space-and-satellites
-    - https://www.ofcom.org.uk/spectrum/space-and-satellites/call-for-input-expanding-spectrum-access-for-satellite-gateways
+    # Debris mitigation / spectrum / D2D / standards
+    - https://www.faa.gov/space
+    - https://space.commerce.gov/regulations/commercial-remote-sensing-regulatory-affairs/
+    - https://space.commerce.gov/regulations/commercial-remote-sensing-regulatory-affairs/licensing/
+    - https://standards.nasa.gov/
+    - https://nodis3.gsfc.nasa.gov/rpt_current_directives.cfm
+    - https://ecss.nl/news-archive/
+    - https://www.itu.int/en/ITU-R/space/brific/Pages/default.aspx
     - https://www.ofcom.org.uk/spectrum/space-and-satellites/consultation-enabling-satellite-direct-to-device-services-in-mobile-spectrum-bands
+
   pharma:
     - https://www.ema.europa.eu/en/news-events/rss-feeds
     - https://www.ema.europa.eu/en/news-events/whats-new
     - https://www.fda.gov/about-fda/contact-fda/subscribe-podcasts-and-news-feeds
     - https://www.fda.gov/medical-devices/medical-devices-news-and-events
     - https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en
+    # Global harmonisation / pharmacopeias / national regulators
+    - https://www.ich.org/page/news
+    - https://www.ich.org/page/ich-guidelines
+    - https://picscheme.org/en/news
+    - https://picscheme.org/en/publications
+    - https://www.edqm.eu/en/newsroom-pheur
+    - https://www.edqm.eu/en/rss-feeds
+    - https://www.uspnf.com/notices/new
+    - https://www.hma.eu/rss.html
+    - https://extranet.who.int/prequal/news
+    - https://www.imdrf.org/rss-feeds
+    - https://yellowcard.mhra.gov.uk/news
+    - https://www.gov.uk/drug-device-alerts
+    - https://www.tga.gov.au/news/news
+    - https://www.tga.gov.au/news/subscribe-updates/rss-feeds
+    - https://www.canada.ca/en/health-canada/corporate/social-media-health-canada/rss-feeds.html
+    - https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/subscribe.html
+    - https://www.pmda.go.jp/english/0006.html
+    - https://www.pmda.go.jp/rss_008.xml
+    - https://www.swissmedic.ch/swissmedic/en/home/news/news.html
+    - https://www.nbog.eu/nbog-documents/
+    - https://www.team-nb.org/all-news/
+
   automotive:
     - https://www.consilium.europa.eu/en/about-site/rss/
     - https://transport.ec.europa.eu/index_en
     - https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en
     - https://www.transportation.gov/rss
+    # UN/EU/US technical regs & safety
+    - https://unece.org/transport/vehicle-regulations/world-forum-harmonization-vehicle-regulations-wp29
+    - https://unece.org/transport/road-transport/working-party-automatedautonomous-and-connected-vehicles-introduction
+    - https://www.federalregister.gov/agencies/national-highway-traffic-safety-administration
+    - https://eur-lex.europa.eu/eli/reg/2018/858/oj/eng
+    - https://single-market-economy.ec.europa.eu/sectors/automotive-industry/technical-harmonisation/technical-harmonisation-eu_en
+    - https://www.etsi.org/newsroom/news
+    - https://www.euroncap.com/en/for-engineers/protocols/
     - https://unece.org/ev-hev-and-fc
-    - https://unece.org/transport/documents/2025/08/working-documents/grsp-proposal-03-series-amendments-un-regulation-no
+
   crossIndustry:
     - https://www.consilium.europa.eu/en/about-site/rss/
     - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
     - https://eur-lex.europa.eu/content/help/my-eurlex/my-rss-feeds.html?locale=en
+    # Cyber/AI/Data/chemicals + fusion + PQC (UK/EU/US)
+    - https://csrc.nist.gov/publications/drafts-open-for-comment
+    - https://csrc.nist.gov/news
+    - https://www.nist.gov/pao/nist-rss-feeds
+    - https://www.cisa.gov/news-events/cybersecurity-advisories
+    - https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml
+    - https://www.cisa.gov/cybersecurity-advisories/ics-medical-advisories.xml
+    - https://www.ncsc.gov.uk/information/rss-feeds
+    - https://www.bsi.bund.de/EN/Service-Navi/Abonnements/RSS/rss_node.html
+    - https://www.cert.ssi.gouv.fr/
+    - https://www.edpb.europa.eu/news/news_en
+    - https://digital-strategy.ec.europa.eu/en/policies/ai-office
+    - https://digital-strategy.ec.europa.eu/en/policies/data-act
+    - https://www.enisa.europa.eu/publications/nis2-technical-implementation-guidance
+    - https://eur-lex.europa.eu/content/help/search/predefined-rss.html
+    - https://echa.europa.eu/news
+    - https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en
+    - https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive/implementation-rohs-directive_en
+    # Fusion (US/UK/EU)
     - https://www.nrc.gov/materials/fusion.html
     - https://www.federalregister.gov/documents/2023/10/04/2023-21988/regulatory-framework-for-fusion-systems
     - https://www.energy.gov/science/fes/fusion-energy-sciences
@@ -56,11 +112,15 @@ sources:
     - https://www.gov.uk/government/publications/energy-security-bill-factsheets/energy-security-bill-factsheet-fusion-regulation
     - https://fusionforenergy.europa.eu/news/
     - https://euro-fusion.org/news/
+    # Post-quantum cryptography (US)
+    - https://csrc.nist.gov/pubs/fips/203/final
+    - https://csrc.nist.gov/pubs/fips/204/final
+    - https://csrc.nist.gov/pubs/fips/205/final
 
 # Keyword cues per section (classification uses the section with most matches)
 keywords:
-  aviation: ["EASA","FAA","SMS","airworthiness","airworthiness directive","AD","AMC","GM","Part-145","SIB","NTSB"]
-  space: ["FCC","Part 25","satellite","earth station","licensing","NGSO","GSO","spectrum","Ofcom","ESA"]
-  pharma: ["EMA","CHMP","MDCG","MDR","IVDR","EUDAMED","QMSR","CDRH","HTA","HTAR","ATMP"]
-  automotive: ["Euro 7","type approval","EV","battery regulation","battery passport","CO2 standards","ZEV","tariff","anti-subsidy"]
-  crossIndustry: ["AI Act","GPAI","CSRD","CSDDD","due diligence","taxonomy","CE marking","standardisation"]
+  aviation: ["EASA","FAA","SMS","airworthiness","airworthiness directive","AD","AMC","GM","Part-145","SIB","NTSB","eVTOL","VTOL","powered-lift","SC-VTOL","vertiport","EB 105A","AAM","UAM","U-space","SORA","JARUS","EUROCAE WG-112","ED-300A","hydrogen","fuel cell","lithium battery","MOC","MOC-3","MOC-5","Part 21J","Part 21G","DOA","POA","MRO","DO-178C","DO-254","ARP4754B","ARP4761"]
+  space: ["FCC","Part 25","satellite","earth station","licensing","NGSO","GSO","spectrum","Ofcom","ESA","ISAM","OSAM","active debris removal","ADR","deorbit 5-year rule","SSA","STM","D2D","E-band","Q/V band","EPFD","Ka-band","gateway earth station","CRSRA","ITU filings","ECSS"]
+  pharma: ["EMA","CHMP","MDCG","MDR","IVDR","EUDAMED","QMSR","CDRH","HTA","HTAR","ATMP","AIaMD","SaMD","PCCP","GMLP","real-world performance","RWP","IMDRF","IEC 62304","IEC 62366","IEC 60601","ISO 14971","ISO 13485","gene therapy","cell therapy","CRISPR","mRNA","CMC","decentralized clinical trials","DCT","RWE","GMP","GCP","GLP","PV"]
+  automotive: ["Euro 7","type approval","EV","battery regulation","battery passport","CO2 standards","ZEV","tariff","anti-subsidy","ADS","ODD","L3","L4","ALKS","UN R157","UN R79","UNECE GRVA","UL 4600","SOTIF","ISO 26262","ISO/SAE 21434","over-the-air updates","OTA","R155","R156","DMS","V2X","C-V2X","ITS-G5","software-defined vehicle","SDV","R100","R134","R136","thermal runaway","HFCV","ETSI ITS"]
+  crossIndustry: ["AI Act","GPAI","CSRD","CSDDD","due diligence","taxonomy","CE marking","standardisation","NIS2","DORA","Data Act","CRA","REACH","CLP","RoHS","SBOM","post-quantum","PQC","quantum-safe","ML-KEM","ML-DSA","SLH-DSA","FIPS 203","FIPS 204","FIPS 205","ICS Advisory","ICS Medical Advisory","ENISA","EDPB","fusion energy","tokamak","stellarator","inertial confinement","spherical tokamak","ITER","DEMO","STEP","tritium","breeding blanket","divertor","byproduct material","NRC Part 30","ADVANCE Act","National Policy Statement"]
