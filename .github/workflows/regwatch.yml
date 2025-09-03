@@ -54,8 +54,14 @@ jobs:
           # Configure token for authentication
           git remote set-url origin https://${GITHUB_TOKEN}@github.com/mgillr/nextalent-regwatch.git
           
-          # Pull latest changes with rebase strategy
-          git pull --rebase origin master
+          # First, stash any changes to avoid conflicts
+          git stash -u || true
+          
+          # Pull latest changes
+          git pull origin master
+          
+          # Pop the stashed changes
+          git stash pop || true
           
           # Add files
           git add out/
