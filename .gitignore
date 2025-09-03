@@ -115,4 +115,4 @@ out/*.js
 out/*.html
 
 # Keep the out directory
-!out/.gitkeep
+!out/.gitkeeptest_out/
