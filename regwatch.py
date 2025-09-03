@@ -23,6 +23,34 @@ import yaml
 
 UTC = timezone.utc
 
+# ---------------------------------------------------------------------------
+# Filtering constants
+#
+# NEGATIVE_KEYWORDS: any entry whose title or summary contains one of these
+# words/phrases will be discarded before classification.  Tweak this list
+# according to the types of non‑technical content you want to suppress.
+NEGATIVE_KEYWORDS = [
+    "interview",
+    "podcast",
+    "webinar",
+    "guide",
+    "blog",
+    "profile",
+    "insight",
+    "awards",
+    "award",
+    "feature",
+    "opinion",
+    "case study",
+    "advertorial",
+    "press release",
+]
+
+# MIN_POSITIVE_HITS: minimum number of keyword matches required to include
+# an item.  Items that only match a source hint (and therefore have zero
+# keyword hits) will be dropped if this is set to 1 or higher.
+MIN_POSITIVE_HITS = 1
+
 # ---------- Utils ----------
 def now_utc() -> datetime:
     return datetime.now(tz=UTC)
@@ -130,6 +158,36 @@ def parse_feed(url: str) -> List[dict]:
     return out
 
 # ---------- Classification / filtering ----------
+def should_include(item: dict, keywords: Dict[str, List[str]]) -> bool:
+    """
+    Determine if an item should be included based on filtering criteria:
+    1. Reject if title/summary contains any negative keywords
+    2. Require at least MIN_POSITIVE_HITS keyword matches
+    """
+    text = f"{item['title']} {item['summary']}".lower()
+    
+    # Check for negative keywords - reject if found
+    for neg_kw in NEGATIVE_KEYWORDS:
+        if neg_kw.lower() in text:
+            return False
+    
+    # Count positive keyword matches across all sections
+    positive_hits = 0
+    for section_kws in keywords.values():
+        for kw in section_kws:
+            kw_lower = kw.lower()
+            # Use word boundary matching for short keywords
+            if len(kw_lower) <= 3:
+                pattern = r'\b' + re.escape(kw_lower) + r'\b'
+                if re.search(pattern, text):
+                    positive_hits += 1
+            # For longer keywords, simple containment is fine
+            elif kw_lower in text:
+                positive_hits += 1
+    
+    # Require minimum number of positive hits
+    return positive_hits >= MIN_POSITIVE_HITS
+
 def classify(item: dict, keywords: Dict[str, List[str]], fallback="crossIndustry") -> str:
     text = f"{item['title']} {item['summary']}".lower()
     source = item['source'].lower()
@@ -183,11 +241,24 @@ def classify(item: dict, keywords: Dict[str, List[str]], fallback="crossIndustry
 def build_digest(items: List[dict], cfg: dict) -> dict:
     window = int(cfg["window_hours"])
     cutoff = now_utc() - timedelta(hours=window)
+
+    # keep only items published in the window
     fresh = [it for it in items if it["published"] and it["published"] >= cutoff]
     if not fresh:
-        # fallback to latest N across everything
-        items_sorted = sorted(items, key=lambda x: x["published"] or datetime(1970,1,1,tzinfo=UTC), reverse=True)
+        # fallback: take most recent items overall
+        items_sorted = sorted(
+            items, key=lambda x: x["published"] or datetime(1970, 1, 1, tzinfo=UTC), reverse=True
+        )
         fresh = items_sorted[: int(cfg["max_items"])]
+
+    # NEW: drop non‑technical items containing negative keywords
+    filtered = []
+    for it in fresh:
+        text = f"{it['title']} {it['summary']}".lower()
+        if any(bad in text for bad in NEGATIVE_KEYWORDS):
+            continue  # skip interviews, podcasts, guides, etc.
+        filtered.append(it)
+    fresh = filtered
 
     # classify
     keywords = cfg["keywords"]
@@ -197,23 +268,44 @@ def build_digest(items: List[dict], cfg: dict) -> dict:
         sec = classify(it, keywords, fallback="crossIndustry")
         sections.setdefault(sec, []).append(it)
 
-    # sort and trim each section
-    for k in list(sections.keys()):
-        arr = sorted(sections[k], key=lambda x: x["published"] or datetime(1970,1,1,tzinfo=UTC), reverse=True)[:12]
-        # normalize fields for output
-        sections[k] = [
+    # NEW: enforce minimum positive keyword matches
+    cleaned_sections = {}
+    for sec, arr in sections.items():
+        cleaned = []
+        for it in arr:
+            # count positive keyword hits
+            text = f"{it['title']} {it['summary']}".lower()
+            hits = 0
+            for kw in keywords.get(sec, []):
+                kwl = kw.lower()
+                if (len(kwl) <= 3 and re.search(r"\b" + re.escape(kwl) + r"\b", text)) or (len(kwl) > 3 and kwl in text):
+                    hits += 1
+            if hits >= MIN_POSITIVE_HITS:
+                cleaned.append(it)
+        if cleaned:
+            cleaned_sections[sec] = cleaned
+
+    # continue sorting and trimming as before, but using cleaned_sections
+    for k in cleaned_sections:
+        arr = sorted(
+            cleaned_sections[k],
+            key=lambda x: x["published"] or datetime(1970, 1, 1, tzinfo=UTC),
+            reverse=True,
+        )[:12]
+        cleaned_sections[k] = [
             {
                 "title": x["title"],
                 "url": x["url"],
                 "source": x["source"],
-                "date": (x["published"].date().isoformat() if x["published"] else ""),
-                "summary": x["summary"]
-            } for x in arr
+                "summary": x["summary"],
+                "published": iso_z(x["published"]) if x["published"] else ""
+            }
+            for x in arr
         ]
 
     return {
         "lastUpdated": iso_z(now_utc()),
-        "sections": {k: v for k, v in sections.items() if v}  # drop empty
+        "sections": cleaned_sections,  # drop empty sections
     }
 
 # ---------- Writers ----------
@@ -250,7 +342,8 @@ def write_widget_js(digest: dict, out_dir="out"):
       const ul=document.createElement("ul"); ul.style.margin=".2rem 0 1rem 1.2rem";
       for(const it of arr){{
         const li=document.createElement("li"); li.style.margin=".4rem 0"; li.style.lineHeight="1.3";
-        li.innerHTML = "<strong>"+esc(it.title)+"</strong> — "+esc(it.date)+" — "+esc(it.source)+"<br><a href='"+esc(it.url)+"' target='_blank' rel='noopener'>"+esc(it.url)+"</a>";
+        const dateStr = it.published ? new Date(it.published).toLocaleDateString() : '';
+        li.innerHTML = "<strong>"+esc(it.title)+"</strong> — "+(dateStr ? esc(dateStr)+" — " : "")+esc(it.source)+"<br><a href='"+esc(it.url)+"' target='_blank' rel='noopener'>"+esc(it.url)+"</a>";
         ul.appendChild(li);
       }}
       wrap.appendChild(ul);
