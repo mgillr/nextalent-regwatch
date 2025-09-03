@@ -10,15 +10,23 @@ RegWatch automatically collects regulatory information from various official sou
 - EMA (European Medicines Agency)
 - FDA (Food and Drug Administration)
 - FCC (Federal Communications Commission)
+- NASA (National Aeronautics and Space Administration)
+- NHTSA (National Highway Traffic Safety Administration)
+- NIST (National Institute of Standards and Technology)
 - And many more...
 
 The system filters the collected information by keywords for different sectors and outputs the data in a standardized JSON format. It also generates a widget that can be embedded in any website.
+
+## Live Demo
+
+You can view the live demo at: [https://mgillr.github.io/nextalent-regwatch/](https://mgillr.github.io/nextalent-regwatch/)
 
 ## Features
 
 - **Automated Collection**: Pulls data from official regulatory sources via RSS feeds and web scraping
 - **Feed Auto-Discovery**: Automatically discovers RSS/Atom feeds from landing pages
-- **Keyword Filtering**: Filters by keywords per sector
+- **Smart Classification**: Uses source-based hints and keyword matching to accurately classify items
+- **Keyword Filtering**: Filters by keywords per sector with word boundary matching for short keywords
 - **Standardized Output**: Outputs data in a consistent JSON format
 - **Embeddable Widget**: Provides a widget that can be embedded in any website
 - **Daily Updates**: Runs automatically on weekdays at 06:25 UK time
@@ -128,7 +136,16 @@ To customize the keywords used for filtering, update the `keywords` section in t
 
 ### Adjusting the Lookback Window
 
-You can adjust how far back the system looks for new items by changing the `window_hours` value in the `regwatch.yml` file.
+You can adjust how far back the system looks for new items by changing the `window_hours` value in the `regwatch.yml` file. The default is 36 hours, but you can increase it to capture more items.
+
+### Classification System
+
+The system uses a smart classification approach:
+
+1. **Source-Based Hints**: Items are first classified based on their source (e.g., NASA → space, EASA → aviation)
+2. **Feed URL Checking**: The system also checks the feed URL for classification hints
+3. **Keyword Matching**: If source-based classification doesn't yield results, items are classified based on keyword matches
+4. **Word Boundary Matching**: For short keywords (≤ 3 characters), the system uses word boundary matching to prevent false matches
 
 ## License
 
