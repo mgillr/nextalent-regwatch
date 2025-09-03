@@ -260,8 +260,22 @@ def write_widget_js(digest: dict, out_dir="out"):
       html += '<ul>';
       
       for (const item of items) {{
+        // Format the date properly
+        let dateStr = '';
+        if (item.published) {{
+          try {{
+            const pubDate = new Date(item.published);
+            dateStr = pubDate.toLocaleDateString();
+          }} catch (e) {{
+            console.error('Error parsing date:', item.published);
+          }}
+        }}
+        
         html += '<li>';
         html += '<a href="' + item.url + '" target="_blank">' + item.title + '</a>';
+        if (dateStr) {{
+          html += '<span class="date">' + dateStr + '</span>';
+        }}
         html += '<span class="source">' + item.source + '</span>';
         html += '</li>';
       }}
@@ -306,6 +320,12 @@ def write_widget_js(digest: dict, out_dir="out"):
         display: block;
         font-size: 0.8em;
         color: #666;
+      }}
+      .nextalent-regwatch-widget .date {{
+        display: inline-block;
+        font-size: 0.8em;
+        color: #666;
+        margin-right: 10px;
       }}
     `;
     
