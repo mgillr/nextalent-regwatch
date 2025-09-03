@@ -11,7 +11,7 @@ Nextalent Regulatory Radar collector
     widget.js                     (data + renderer; optional embed)
     index.html                    (standalone fallback page)
 """
-import os, sys, json, traceback
+import os, sys, json, traceback, re
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List
 import urllib.parse as up
@@ -122,15 +122,51 @@ def parse_feed(url: str) -> List[dict]:
 # ---------- Classification / filtering ----------
 def classify(item: dict, keywords: Dict[str, List[str]], fallback="crossIndustry") -> str:
     text = f"{item['title']} {item['summary']}".lower()
-    best_section, best_hits = fallback, -1
+    source = item['source'].lower()
+    
+    # Source-based hints
+    source_hints = {
+        "nasa": "space",
+        "esa": "space",
+        "fcc": "space",
+        "easa": "aviation",
+        "faa": "aviation",
+        "ema": "pharma",
+        "fda": "pharma",
+        "nhtsa": "automotive"
+    }
+    
+    # Check for source hints
+    initial_hint = None
+    for src_key, section in source_hints.items():
+        if src_key in source:
+            initial_hint = section
+            break
+    
+    # Improved keyword matching with word boundaries
+    best_section, best_hits = initial_hint or fallback, 0
+    
     for section, kws in keywords.items():
         hits = 0
         for kw in kws:
-            if kw.lower() in text:
+            kw_lower = kw.lower()
+            # Use word boundary matching for short keywords
+            if len(kw_lower) <= 3:
+                pattern = r'\b' + re.escape(kw_lower) + r'\b'
+                if re.search(pattern, text):
+                    hits += 1
+            # For longer keywords, simple containment is fine
+            elif kw_lower in text:
                 hits += 1
+        
         if hits > best_hits:
             best_section, best_hits = section, hits
-    return best_section if best_hits >= 0 else fallback  # always place somewhere
+    
+    # If no keywords matched but we have a source hint, use that
+    if best_hits == 0 and initial_hint:
+        best_section = initial_hint
+    
+    return best_section
 
 def build_digest(items: List[dict], cfg: dict) -> dict:
     window = int(cfg["window_hours"])
