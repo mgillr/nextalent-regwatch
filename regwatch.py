@@ -133,6 +133,7 @@ def parse_feed(url: str) -> List[dict]:
 def classify(item: dict, keywords: Dict[str, List[str]], fallback="crossIndustry") -> str:
     text = f"{item['title']} {item['summary']}".lower()
     source = item['source'].lower()
+    feed_url = item.get('feed', '').lower()
     
     # Source-based hints
     source_hints = {
@@ -143,13 +144,14 @@ def classify(item: dict, keywords: Dict[str, List[str]], fallback="crossIndustry
         "faa": "aviation",
         "ema": "pharma",
         "fda": "pharma",
-        "nhtsa": "automotive"
+        "nhtsa": "automotive",
+        "transportation.gov": "automotive"
     }
     
-    # Check for source hints
+    # Check for source hints in both source name and feed URL
     initial_hint = None
     for src_key, section in source_hints.items():
-        if src_key in source:
+        if src_key in source or src_key in feed_url:
             initial_hint = section
             break
     
