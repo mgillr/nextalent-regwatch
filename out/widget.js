@@ -1,243 +1,36 @@
-// Nextalent Regulatory Radar Widget
-// Generated: 2025-09-03T09:11:19Z
-(function() {
-  const data = {
-  "lastUpdated": "2025-09-03T08:44:42Z",
-  "sections": {
-    "aviation": [
-      {
-        "title": "EASA launches new film addressing passengers for an even safer, greener future for air travel",
-        "summary": "Today, EASA proudly launches its new corporate film, putting the spotlight on the people at the heart of European aviation—passengers. The film offers a glimpse into the essential work EASA does to enable the air travel experience for millions across Europe. From the moment a loved one greets you...",
-        "source": "News",
-        "published": "2025-09-01T21:00:00Z",
-        "url": "https://www.easa.europa.eu/newsroom-and-events/news/easa-launches-new-film-addressing-passengers-even-safer-greener-future-0",
-        "feed": "https://www.easa.europa.eu/newsroom-and-events/news/feed.xml"
+(()=>{
+  const DATA = {"lastUpdated": "2025-09-03T16:49:29Z", "sections": {"space": [{"title": "Delta Electronics CNCSoft-G2", "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-25-240-04", "source": "All CISA Advisories", "summary": "View CSAF 1. EXECUTIVE SUMMARY CVSS v4 8.5 ATTENTION : Low attack complexity Vendor : Delta Electronics Equipment : CNCSoft-G2 Vulnerability : Out-of-bounds Write 2. RISK EVALUATION Successful exploitation of this vulnerability could allow attackers to execute arbitrary code on affected installations of the device. 3. TECHNICAL DETAILS 3.1 AFFECTED PRODUCTS The following versions of Delta Electronics CNCSoft-G2 are affected: CNCSoft-G2: Version 2.1.0.20 and prior 3.2 VULNERABILITY OVERVIEW 3.2.1 OUT-OF-BOUNDS WRITE CWE-787 Delta Electronics CNCSoft-G2 is vulnerable to a flaw in the parsing of DPAX files that allows attackers to execute arbitrary code. This vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file. Exploitation of this flaw can result in memory corruption and code execution within the context of the current process. CVE-2025-47728 has been assigned to this vulnerability. A CVSS v3.1 base score of 7.8 has been calculated; the CVSS vector string is ( AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H ). A CVSS v4 score has also been calculated for CVE-2025-47728 . A base score of 8.5 has been calculated; the CVSS vector string is ( AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N ). 3.3 BACKGROUND CRITICAL INFRASTRUCTURE SECTORS: Critical Manufacturing, Energy COUNTRIES/AREAS DEPLOYED: Worldwide COMPANY HEADQUARTERS LOCATION: Taiwan 3.4 RESEARCHER Natnael Samson (@NattiSamson) working with Trend Micro Zero Day Initiative reported this vulnerability to CISA. 4. MITIGATIONS Delta Electronics recommends users update to v2.1.0.27 or later. Delta has published Delta-PCSA-2025-00007 in both English and Chinese on their security website to provide more details about these issues. Delta also recommends the following general security practices: Do not click on untrusted Internet links or open unsolicited attachments in emails. Avoid exposing control systems and equipment to the Internet. Place systems and devices behind a firewall and isolate them from the business network. When remote access is required, use a secure access method, such as a virtual private network (VPN). If you have any product-related support concerns, find a contact from Delta's portal page for any information or materials you may require. CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics . Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies . CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets . Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents. CISA also recommends users take the following measures to protect themselves from social engineering attacks: Refer to Recognizing and Avoiding Email Scams for more information on avoiding email scams. Refer to Avoiding Social Engineering and Phishing Attacks for more information on social engineering attacks. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely. 5. UPDATE HISTORY August 28, 2025: Initial Publication", "published": "2025-08-28T12:00:00Z"}, {"title": "Delta Electronics CNCSoft-G2", "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-25-240-04", "source": "ICS Advisories", "summary": "View CSAF 1. EXECUTIVE SUMMARY CVSS v4 8.5 ATTENTION : Low attack complexity Vendor : Delta Electronics Equipment : CNCSoft-G2 Vulnerability : Out-of-bounds Write 2. RISK EVALUATION Successful exploitation of this vulnerability could allow attackers to execute arbitrary code on affected installations of the device. 3. TECHNICAL DETAILS 3.1 AFFECTED PRODUCTS The following versions of Delta Electronics CNCSoft-G2 are affected: CNCSoft-G2: Version 2.1.0.20 and prior 3.2 VULNERABILITY OVERVIEW 3.2.1 OUT-OF-BOUNDS WRITE CWE-787 Delta Electronics CNCSoft-G2 is vulnerable to a flaw in the parsing of DPAX files that allows attackers to execute arbitrary code. This vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file. Exploitation of this flaw can result in memory corruption and code execution within the context of the current process. CVE-2025-47728 has been assigned to this vulnerability. A CVSS v3.1 base score of 7.8 has been calculated; the CVSS vector string is ( AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H ). A CVSS v4 score has also been calculated for CVE-2025-47728 . A base score of 8.5 has been calculated; the CVSS vector string is ( AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N ). 3.3 BACKGROUND CRITICAL INFRASTRUCTURE SECTORS: Critical Manufacturing, Energy COUNTRIES/AREAS DEPLOYED: Worldwide COMPANY HEADQUARTERS LOCATION: Taiwan 3.4 RESEARCHER Natnael Samson (@NattiSamson) working with Trend Micro Zero Day Initiative reported this vulnerability to CISA. 4. MITIGATIONS Delta Electronics recommends users update to v2.1.0.27 or later. Delta has published Delta-PCSA-2025-00007 in both English and Chinese on their security website to provide more details about these issues. Delta also recommends the following general security practices: Do not click on untrusted Internet links or open unsolicited attachments in emails. Avoid exposing control systems and equipment to the Internet. Place systems and devices behind a firewall and isolate them from the business network. When remote access is required, use a secure access method, such as a virtual private network (VPN). If you have any product-related support concerns, find a contact from Delta's portal page for any information or materials you may require. CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics . Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies . CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets . Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov/ics in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies . Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents. CISA also recommends users take the following measures to protect themselves from social engineering attacks: Refer to Recognizing and Avoiding Email Scams for more information on avoiding email scams. Refer to Avoiding Social Engineering and Phishing Attacks for more information on social engineering attacks. No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely. 5. UPDATE HISTORY August 28, 2025: Initial Publication", "published": "2025-08-28T12:00:00Z"}], "pharma": [{"title": "IMDRF Document Implementation Report", "url": "https://www.imdrf.org/documents/imdrf-document-implementation-report-0", "source": "IMDRF - Documents", "summary": "IMDRF Document Implementation Report", "published": "2025-09-01T00:44:57Z"}], "crossIndustry": [{"title": "CISA, NSA, and Global Partners Release a Shared Vision of Software Bill of Materials (SBOM) Guidance", "url": "https://www.cisa.gov/news-events/alerts/2025/09/03/cisa-nsa-and-global-partners-release-shared-vision-software-bill-materials-sbom-guidance", "source": "All CISA Advisories", "summary": "CISA, in collaboration with NSA and 19 international partners, released joint guidance outlining A Shared Vision of Software Bill of Materials (SBOM) for Cybersecurity . This marks a significant step forward in strengthening software supply chain transparency and security worldwide. An SBOM is a formal record detailing the components and supply chain relationships used in building software. SBOMs act as a software “ingredients list” providing organizations with essential visibility into software dependencies, enabling them to identify components, assess risks, and take proactive measures to mitigate vulnerabilities. The guidance highlights the benefits of SBOM adoption for software producers, purchasers, operators, and national security organizations. Key advantages include reducing risks, improving vulnerability management, and enhancing overall software security practices. By promoting transparency, aligning technical approaches, and leveraging automation, SBOM adoption strengthens the resilience of the global software ecosystem. This guidance urges organizations worldwide to integrate SBOM practices into their security frameworks to collaboratively address supply chain risks and enhance cybersecurity resilience. For more information on SBOM, visit: https://www.cisa.gov/sbom . For leadership statements from co-authoring organizations, visit: Statements of Support on A Shared Vision of SBOM for Cybersecurity .", "published": "2025-09-03T12:00:00Z"}, {"title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog", "url": "https://www.cisa.gov/news-events/alerts/2025/09/02/cisa-adds-two-known-exploited-vulnerabilities-catalog", "source": "All CISA Advisories", "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2020-24363 TP-link TL-WA855RE Missing Authentication for Critical Function Vulnerability CVE-2025-55177 Meta Platforms WhatsApp Incorrect Authorization Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the BOD 22-01 Fact Sheet for more information. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .", "published": "2025-09-02T12:00:00Z"}, {"title": "CISA Adds One Known Exploited Vulnerability to Catalog", "url": "https://www.cisa.gov/news-events/alerts/2025/08/29/cisa-adds-one-known-exploited-vulnerability-catalog", "source": "All CISA Advisories", "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-57819 Sangoma FreePBX Authentication Bypass Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulnerabilities and Exposures (CVEs) that carry significant risk to the federal enterprise. BOD 22-01 requires Federal Civilian Executive Branch (FCEB) agencies to remediate identified vulnerabilities by the due date to protect FCEB networks against active threats. See the BOD 22-01 Fact Sheet for more information. Although BOD 22-01 only applies to FCEB agencies, CISA strongly urges all organizations to reduce their exposure to cyberattacks by prioritizing timely remediation of KEV Catalog vulnerabilities as part of their vulnerability management practice. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .", "published": "2025-08-29T12:00:00Z"}]}};
+  function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
+  function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",crossIndustry:"Cross‑industry"})[k]||k;}
+  function render(id) {
+    const root = document.getElementById(id||"regwatch-root"); if(!root) return;
+    const wrap = document.createElement("div"); wrap.className="regwatch";
+    const h1 = document.createElement("h1"); h1.textContent="Daily Regulatory Brief"; wrap.appendChild(h1);
+    const meta = document.createElement("div"); meta.style.opacity=".7"; meta.style.margin="0 0 1rem";
+    meta.textContent="Updated " + new Date(DATA.lastUpdated).toUTCString(); wrap.appendChild(meta);
+    const order = ["crossIndustry","automotive","pharma","aviation","space"];
+    for(const k of order){
+      const arr = (DATA.sections||{})[k]; if(!arr||!arr.length) continue;
+      const h2=document.createElement("h2"); h2.textContent=titleMap(k); wrap.appendChild(h2);
+      const ul=document.createElement("ul"); ul.style.margin=".2rem 0 1rem 1.2rem";
+      for(const it of arr){
+        const li=document.createElement("li"); li.style.margin=".4rem 0"; li.style.lineHeight="1.3";
+        const dateStr = it.published ? new Date(it.published).toLocaleDateString() : '';
+        li.innerHTML = "<strong>"+esc(it.title)+"</strong> — "+(dateStr ? esc(dateStr)+" — " : "")+esc(it.source)+"<br><a href='"+esc(it.url)+"' target='_blank' rel='noopener'>"+esc(it.url)+"</a>";
+        ul.appendChild(li);
       }
-    ],
-    "space": [
-      {
-        "title": "NASA 2026 Human Lander Challenge",
-        "summary": "NASA’s Human Lander Challenge (HuLC) is an initiative supporting its Exploration Systems Development Mission Directorate’s (ESDMD’s) efforts to explore innovative solutions for a variety of known technology development areas for human landing systems (HLS). Landers are used to safely ferry astron...",
-        "source": "NASA",
-        "published": "2025-09-02T20:42:22Z",
-        "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-2026-human-lander-challenge/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Lydia Rodriguez Builds a Career of Service and Support at NASA",
-        "summary": "Lydia Rodriguez is an office administrator in the Flight Operations Directorate’s Operations Division and Operations Tools and Procedures Branch at NASA’s Johnson Space Center in Houston.&#160; Over nearly two decades, she has supported nine organizations, helping enable NASA’s missions and formi...",
-        "source": "NASA",
-        "published": "2025-09-02T20:28:17Z",
-        "url": "https://www.nasa.gov/centers-and-facilities/johnson/lydia-rodriguez-builds-a-career-of-service-and-support-at-nasa/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Circular Star Trails",
-        "summary": "On July 26, 2025, NASA astronaut Nichole Ayers took this long-exposure photograph – taken over 31 minutes from a window inside the International Space Station’s Kibo laboratory module – capturing the circular arcs of star trails. In its third decade of continuous human presence, the space station...",
-        "source": "NASA",
-        "published": "2025-09-02T14:17:28Z",
-        "url": "https://www.nasa.gov/image-article/circular-star-trails/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth",
-        "summary": "Advancing Single-Photon Sensing Image Sensors to Enable the Search for Life Beyond Earth A NASA-sponsored team is advancing single-photon sensing Complementary Metal-Oxide-Semiconductor (CMOS) detector technology that will enable future NASA astrophysics space missions to search for life on other...",
-        "source": "NASA",
-        "published": "2025-09-02T14:00:32Z",
-        "url": "https://science.nasa.gov/directorates/stmd/advancing-single-photon-sensing-image-sensors-to-enable-the-search-for-life-beyond-earth/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Tech From NASA’s Hurricane-hunting TROPICS Flies on Commercial Satellites",
-        "summary": "NASA science and American industry have worked hand-in-hand for more than 60 years, transforming novel technologies created with NASA research into commercial products like cochlear implants, memory-foam mattresses, and more. Now, a NASA-funded device for probing the interior of storm systems has...",
-        "source": "NASA",
-        "published": "2025-09-02T13:53:35Z",
-        "url": "https://www.nasa.gov/earth/tech-from-nasas-hurricane-hunting-tropics-flies-on-commercial-satellites/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "New MetOp Second Generation weather satellite returns first data",
-        "summary": "Less than three weeks since the first MetOp Second Generation weather satellite, MetOp-SG-A1, was launched, this remarkable new satellite has already started transmitting data from two of its cutting-edge instruments, offering a tantalising glimpse of what’s to come.",
-        "source": "ESA Top News",
-        "published": "2025-09-02T08:00:00Z",
-        "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/New_MetOp_Second_Generation_weather_satellite_returns_first_data",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "NASA Astronaut Megan McArthur Retires",
-        "summary": "NASA astronaut Megan McArthur has retired, concluding a career spanning more than two decades. A veteran of two spaceflights, McArthur logged 213 days in space, including being the first woman to pilot a SpaceX Dragon spacecraft and the last person to “touch” the Hubble Space Telescope with the s...",
-        "source": "NASA",
-        "published": "2025-08-29T15:21:40Z",
-        "url": "https://www.nasa.gov/news-release/nasa-astronaut-megan-mcarthur-retires/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Dusty wisps round a dusty disc",
-        "summary": "For this new&nbsp; Picture of the Month &nbsp;feature, the NASA/ESA/CSA&nbsp; James Webb Space Telescope &nbsp;has provided a fantastic new view of IRAS 04302+2247, a planet-forming disc located about 525 light-years away in a dark cloud within the Taurus star-forming region. With Webb, researche...",
-        "source": "ESA Top News",
-        "published": "2025-08-29T08:00:00Z",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Dusty_wisps_round_a_dusty_disc",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "Izaña-2 joins the laser game to track space debris",
-        "summary": "Video: 00:09:30 In Tenerife, Spain, stands a unique duo: ESA’s Izaña-1 and Izaña-2 laser-ranging stations. Together, they form an optical technology testbed of the European Space Agency that takes the monitoring of space debris and satellites to a new level while maturing new technologies for com...",
-        "source": "ESA Top News",
-        "published": "2025-08-28T08:00:00Z",
-        "url": "https://www.esa.int/ESA_Multimedia/Videos/2025/08/Izana-2_joins_the_laser_game_to_track_space_debris",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "Algae bloom chlorophyll South Australia",
-        "summary": "Image: This Copernicus Sentinel-3 image shows high concentrations of chlorophyll in yellow-green along the coastline of South Australia, near Adelaide. Chlorophyll-a is a key indicator of the presence of algae in the ocean.",
-        "source": "ESA Top News",
-        "published": "2025-08-27T13:18:00Z",
-        "url": "https://www.esa.int/ESA_Multimedia/Images/2025/08/Algae_bloom_chlorophyll_South_Australia",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "ESA and JAXA advance potential Apophis mission collaboration",
-        "summary": "The Japan Aerospace Exploration Agency ( JAXA ) has requested funding to participate in the European Space Agency’s (ESA) Rapid Apophis Mission for Space Safety ( Ramses ).",
-        "source": "ESA Top News",
-        "published": "2025-08-27T12:00:00Z",
-        "url": "https://www.esa.int/Space_Safety/Planetary_Defence/ESA_and_JAXA_advance_potential_Apophis_mission_collaboration",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      }
-    ],
-    "pharma": [],
-    "automotive": [],
-    "crossIndustry": [
-      {
-        "title": "Juno Detected the Final Missing Auroral Signature from Jupiter’s Four Largest Moons",
-        "summary": "Jupiter hosts the brightest and most spectacular auroras in the Solar System. Near its poles, these shimmering lights offer a glimpse into how the planet interacts with the solar wind and moons swept by Jupiter’s magnetic field. Unlike Earth’s northern lights, the largest moons of Jupiter create ...",
-        "source": "NASA",
-        "published": "2025-09-03T00:56:53Z",
-        "url": "https://science.nasa.gov/missions/juno/juno-detected-the-final-missing-auroral-signature-from-jupiters-four-largest-moons/",
-        "feed": "https://www.nasa.gov/feed/"
-      },
-      {
-        "title": "Double trouble: Solar Orbiter traces superfast electrons back to Sun",
-        "summary": "The European Space Agency-led Solar Orbiter mission has split the flood of energetic particles flung out into space from the Sun into two groups, tracing each back to a different kind of outburst from our star.",
-        "source": "ESA Top News",
-        "published": "2025-09-01T07:00:00Z",
-        "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Double_trouble_Solar_Orbiter_traces_superfast_electrons_back_to_Sun",
-        "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_News"
-      },
-      {
-        "title": "NIST Revises Security and Privacy Control Catalog to Improve Software Update and Patch Releases",
-        "summary": "The catalog revision is part of NIST’s response to a recent executive order on strengthening the nation’s cybersecurity.",
-        "source": "NIST News",
-        "published": "2025-08-27T12:00:00Z",
-        "url": "https://www.nist.gov/news-events/news/2025/08/nist-revises-security-and-privacy-control-catalog-improve-software-update",
-        "feed": "https://www.nist.gov/news-events/news/rss.xml"
-      }
-    ]
-  }
-};
-  
-  // Widget rendering code
-  function renderWidget(container) {
-    if (!container) return;
-    
-    // Create widget HTML
-    let html = '<div class="nextalent-regwatch-widget">';
-    html += '<h2>Regulatory Radar</h2>';
-    html += '<p>Last updated: ' + new Date(data.lastUpdated).toLocaleString() + '</p>';
-    
-    // Render sections
-    for (const [section, items] of Object.entries(data.sections)) {
-      if (items.length === 0) continue;
-      
-      const sectionTitle = section.charAt(0).toUpperCase() + section.slice(1);
-      html += '<div class="section">';
-      html += '<h3>' + sectionTitle + '</h3>';
-      html += '<ul>';
-      
-      for (const item of items) {
-        // Format the date properly
-        let dateStr = '';
-        if (item.published) {
-          try {
-            const pubDate = new Date(item.published);
-            dateStr = pubDate.toLocaleDateString();
-          } catch (e) {
-            console.error('Error parsing date:', item.published);
-          }
-        }
-        
-        html += '<li>';
-        html += '<a href="' + item.url + '" target="_blank">' + item.title + '</a>';
-        if (dateStr) {
-          html += '<span class="date">' + dateStr + '</span>';
-        }
-        html += '<span class="source">' + item.source + '</span>';
-        html += '</li>';
-      }
-      
-      html += '</ul>';
-      html += '</div>';
+      wrap.appendChild(ul);
     }
-    
-    html += '</div>';
-    
-    // Add CSS
-    const style = document.createElement('style');
-    style.textContent = `
-      .nextalent-regwatch-widget {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-      }
-      .nextalent-regwatch-widget h2 {
-        margin-top: 0;
-        color: #333;
-      }
-      .nextalent-regwatch-widget .section {
-        margin-bottom: 20px;
-      }
-      .nextalent-regwatch-widget h3 {
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #eee;
-      }
-      .nextalent-regwatch-widget ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      .nextalent-regwatch-widget li {
-        margin-bottom: 8px;
-      }
-      .nextalent-regwatch-widget .source {
-        display: block;
-        font-size: 0.8em;
-        color: #666;
-      }
-      .nextalent-regwatch-widget .date {
-        display: inline-block;
-        font-size: 0.8em;
-        color: #666;
-        margin-right: 10px;
-      }
-    `;
-    
-    // Render to container
-    container.innerHTML = html;
-    document.head.appendChild(style);
+    root.innerHTML=""; root.appendChild(wrap);
+    // JSON-LD
+    try {
+      const items = Object.values(DATA.sections||{}).flat().map((it,i)=>({"@type":"ListItem","position":i+1,"url":it.url,"name":it.title}));
+      const ld = {"@context":"https://schema.org","@type":"ItemList","name":"Nextalent Daily Regulatory Brief","dateCreated":DATA.lastUpdated,"itemListElement":items};
+      const tag=document.createElement("script"); tag.type="application/ld+json"; tag.textContent=JSON.stringify(ld); document.head.appendChild(tag);
+    } catch(_e){}
   }
-  
-  // Initialize widget when DOM is ready
-  function init() {
-    const container = document.getElementById('nextalent-regwatch-container');
-    renderWidget(container);
-  }
-  
-  // Check if DOM is already loaded
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
+  window.NextalentRegwatch={data:DATA,render};
+  if(!document.currentScript || document.currentScript.dataset.autorender!=="false"){
+    if(document.readyState!=="loading") render(); else document.addEventListener("DOMContentLoaded",()=>render());
   }
 })();
