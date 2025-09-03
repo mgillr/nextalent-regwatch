@@ -26,12 +26,12 @@ jobs:
       
       - name: Run RegWatch collector
         run: |
-          python src/main.py
+          python regwatch.py
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: data
+          folder: out
           branch: gh-pages
           clean: true
       
@@ -39,5 +39,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
+          git add out/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update RegWatch data [skip ci]" && git push)
