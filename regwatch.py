@@ -30,6 +30,7 @@ UTC = timezone.utc
 # words/phrases will be discarded before classification.  Tweak this list
 # according to the types of non‑technical content you want to suppress.
 NEGATIVE_KEYWORDS = [
+    # Content type filters
     "interview",
     "podcast",
     "webinar",
@@ -44,12 +45,38 @@ NEGATIVE_KEYWORDS = [
     "case study",
     "advertorial",
     "press release",
+    
+    # Generic ISO standard filters
+    "ISO/CD",
+    "ISO/DIS",
+    "ISO/FDIS",
+    "ISO/AWI",
+    "ISO/WD",
+    "ISO/TR",
+    "ISO/TS",
+    "ISO/IEC",
+    
+    # Non-technical ISO subjects
+    "paper and board",
+    "textile",
+    "furniture",
+    "cosmetics",
+    "tourism",
+    "sports",
+    "packaging",
+    "food products",
+    "agriculture",
+    "petroleum products",
 ]
 
 # MIN_POSITIVE_HITS: minimum number of keyword matches required to include
 # an item.  Items that only match a source hint (and therefore have zero
 # keyword hits) will be dropped if this is set to 1 or higher.
 MIN_POSITIVE_HITS = 1
+
+# MIN_CROSS_INDUSTRY_HITS: higher threshold for cross-industry items to ensure
+# they are highly relevant and not just generic standards updates
+MIN_CROSS_INDUSTRY_HITS = 2
 
 # ---------- Utils ----------
 def now_utc() -> datetime:
@@ -268,7 +295,7 @@ def build_digest(items: List[dict], cfg: dict) -> dict:
         sec = classify(it, keywords, fallback="crossIndustry")
         sections.setdefault(sec, []).append(it)
 
-    # NEW: enforce minimum positive keyword matches
+    # NEW: enforce minimum positive keyword matches with higher threshold for cross-industry
     cleaned_sections = {}
     for sec, arr in sections.items():
         cleaned = []
@@ -280,7 +307,11 @@ def build_digest(items: List[dict], cfg: dict) -> dict:
                 kwl = kw.lower()
                 if (len(kwl) <= 3 and re.search(r"\b" + re.escape(kwl) + r"\b", text)) or (len(kwl) > 3 and kwl in text):
                     hits += 1
-            if hits >= MIN_POSITIVE_HITS:
+            
+            # Apply different thresholds based on section
+            required_hits = MIN_CROSS_INDUSTRY_HITS if sec == "crossIndustry" else MIN_POSITIVE_HITS
+            
+            if hits >= required_hits:
                 cleaned.append(it)
         if cleaned:
             cleaned_sections[sec] = cleaned
