@@ -9,11 +9,29 @@ sources:
     - https://www.faa.gov/newsroom
     - https://www.faa.gov/about/initiatives/sms
     - https://www.ntsb.gov/Pages/RSS.aspx
+# eVTOL / AAM / Vertiports (EU/UK/US)
+    - https://www.easa.europa.eu/en/document-library/product-certification-consultations/special-condition-vtol
+    - https://www.easa.europa.eu/en/domains/rotorcraft-vtol/VTOL
+    - https://www.easa.europa.eu/en/document-library/general-publications/prototype-technical-design-specifications-vertiports
+    - https://www.faa.gov/air-taxis
+    - https://www.faa.gov/airports/engineering/engineering_briefs
+    - https://www.caa.co.uk/our-work/research-and-innovation/enabling-advanced-air-mobility/
+    - https://jarus-rpas.org/publications/
+    - https://www.eurocae.net/working-groups/
+# Hydrogen aviation (EU/US)
+    - https://www.faa.gov/aircraft/air_cert/step/disciplines/propulsion_systems/hydrogen-fueled_aircraft_roadmap
+    - https://www.faa.gov/regulationspolicies/rulemaking/committees/documents/hydrogen-aviation-working-group-hawg-tasking
+    - https://www.easa.europa.eu/en/downloads/138051/en
   space:
     - https://www.fcc.gov/news-events/rss-feeds-and-email-updates-fcc
     - https://www.fcc.gov/news-events/rss-feeds-email-signup/ecfs-rss-feeds
     - https://www.esa.int/Services/RSS_Feeds
     - https://www.ofcom.org.uk/spectrum/space-and-satellites
+    - https://www.fcc.gov/document/fcc-adopts-new-5-year-rule-deorbiting-satellites-0
+    - https://docs.fcc.gov/public/attachments/FCC-24-6A1.pdf
+    - https://www.ofcom.org.uk/spectrum/space-and-satellites
+    - https://www.ofcom.org.uk/spectrum/space-and-satellites/call-for-input-expanding-spectrum-access-for-satellite-gateways
+    - https://www.ofcom.org.uk/spectrum/space-and-satellites/consultation-enabling-satellite-direct-to-device-services-in-mobile-spectrum-bands
   pharma:
     - https://www.ema.europa.eu/en/news-events/rss-feeds
     - https://www.ema.europa.eu/en/news-events/whats-new
@@ -25,10 +43,19 @@ sources:
     - https://transport.ec.europa.eu/index_en
     - https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en
     - https://www.transportation.gov/rss
+    - https://unece.org/ev-hev-and-fc
+    - https://unece.org/transport/documents/2025/08/working-documents/grsp-proposal-03-series-amendments-un-regulation-no
   crossIndustry:
     - https://www.consilium.europa.eu/en/about-site/rss/
     - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
     - https://eur-lex.europa.eu/content/help/my-eurlex/my-rss-feeds.html?locale=en
+    - https://www.nrc.gov/materials/fusion.html
+    - https://www.federalregister.gov/documents/2023/10/04/2023-21988/regulatory-framework-for-fusion-systems
+    - https://www.energy.gov/science/fes/fusion-energy-sciences
+    - https://www.gov.uk/government/consultations/fusion-energy-facilities-new-national-policy-statement-and-proposals-on-siting/outcome/new-national-policy-statement-for-fusion-energy-government-response-accessible-webpage
+    - https://www.gov.uk/government/publications/energy-security-bill-factsheets/energy-security-bill-factsheet-fusion-regulation
+    - https://fusionforenergy.europa.eu/news/
+    - https://euro-fusion.org/news/
 
 # Keyword cues per section (classification uses the section with most matches)
 keywords:
