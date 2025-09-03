@@ -110,3 +110,9 @@ venv.bak/
 
 # Project specific
 regwatch.log
+out/*.json
+out/*.js
+out/*.html
+
+# Keep the out directory
+!out/.gitkeep
