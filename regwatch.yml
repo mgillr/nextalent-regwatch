@@ -8,14 +8,22 @@ sources:
     # FAA – regulatory directives and advisory circulars
     - https://www.faa.gov/regulations_policies/airworthiness_directives                # FAA Airworthiness Directives
     - https://www.faa.gov/regulations_policies/advisory_circulars                      # Advisory Circulars (ACs) and updates
+    # EASA regulations and certification specifications
+    - https://www.easa.europa.eu/en/document-library/easy-access-rules                # EASA Easy Access Rules
+    - https://www.easa.europa.eu/en/document-library/certification-specifications      # EASA Certification Specifications
+    - https://www.easa.europa.eu/en/document-library/acceptable-means-of-compliance-and-guidance-materials # AMC & GM
     # NTSB – investigations, reports & safety recommendations (RSS available)
     - https://www.ntsb.gov/Pages/RSS.aspx                                             # Investigations & reports feeds listing
+    # ICAO standards and recommended practices
+    - https://www.icao.int/safety/Pages/default.aspx                                  # ICAO Safety
+    - https://www.icao.int/environmental-protection/Pages/default.aspx                # ICAO Environmental Protection
     # eVTOL / AAM / Vertiports – technical documents & standards
     - https://www.easa.europa.eu/en/domains/rotorcraft-vtol/VTOL                      # EASA VTOL (eVTOL) publications
     - https://www.easa.europa.eu/en/document-library/general-publications/prototype-technical-design-specifications-vertiports  # Vertiport design specs
     - https://www.faa.gov/airports/engineering/engineering_briefs                     # FAA engineering briefs (e.g. vertiports)
     # Alternative propulsion (hydrogen/battery) – roadmaps & working groups
     - https://www.faa.gov/regulationspolicies/rulemaking/committees/documents/hydrogen-aviation-working-group-hawg-tasking  # HAWG tasking documents
+    - https://www.easa.europa.eu/en/newsroom-and-events?keywords=hydrogen             # EASA hydrogen news and events
 
   space:
     # ESA – space engineering & debris standards
@@ -56,41 +64,74 @@ sources:
     # Automated & autonomous vehicle regulations
     - https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety                    # NHTSA automated vehicles safety policies
     - https://www.nhtsa.gov/laws-regulations/fmvss                                          # Federal Motor Vehicle Safety Standards (FMVSS)
+    - https://unece.org/transport/vehicle-regulations-wp29/automated-and-connected-vehicles-working-party-automated-connected  # UNECE WP.29 GRVA
+    - https://www.sae.org/standards/development/avtestingstandards/                           # SAE Automated Vehicle Testing Standards
     # EU type‑approval & harmonisation
     - https://eur-lex.europa.eu/eli/reg/2018/858/oj/eng                                       # Regulation (EU) 2018/858 (type‑approval)
+    - https://ec.europa.eu/growth/sectors/automotive-industry/technical-harmonisation/motor-vehicles_en  # EU technical harmonisation
     # EV & battery regulations
     - https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en                 # EU Batteries Regulation & implementation
     - https://unece.org/ev-hev-and-fc                                                         # UNECE Electric & Hybrid Vehicles / Fuel Cell activities
+    - https://www.energy.gov/eere/vehicles/vehicle-technologies-office                        # DOE Vehicle Technologies Office
+    - https://www.carb.ca.gov/our-work/programs/advanced-clean-cars-program                   # CARB Advanced Clean Cars Program
     # Technical standards & safety
     - https://www.etsi.org/technologies/automotive-intelligent-transport                       # ETSI ITS & V2X standards
     - https://www.euroncap.com/en/for-engineers/protocols/                                     # Euro NCAP protocols (crash & ADAS testing)
     - https://www.iso.org/committee/46706.html                                                 # ISO/SAE 21434 (road‑vehicle cybersecurity) committee page
+    - https://www.autosar.org/standards/                                                      # AUTOSAR standards for automotive software
 
-  crossIndustry:
-    # AI regulations & risk management - high-impact regulatory frameworks
+  infotech:
+    # Cybersecurity frameworks and standards
+    - https://www.cisa.gov/topics/critical-infrastructure-security                           # CISA critical infrastructure security
+    - https://www.cisa.gov/known-exploited-vulnerabilities-catalog                           # CISA Known Exploited Vulnerabilities Catalog
+    - https://www.enisa.europa.eu/publications/nis2-technical-implementation-guidance         # ENISA technical guidance on NIS2 compliance
+    - https://www.ncsc.gov.uk/section/keep-up-to-date/ncsc-news?q=&defaultTypes=guidance&sort=date%2Bdesc  # UK NCSC guidance & security advisories
+    - https://csrc.nist.gov/publications/sp800                                               # NIST Special Publications 800-series
+    - https://www.iso.org/standard/27001                                                     # ISO/IEC 27001 Information Security Management
+    # Data protection & privacy regulations
+    - https://www.edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en  # EDPB guidelines & recommendations
+    - https://ico.org.uk/for-organisations/guide-to-data-protection/                         # UK ICO Data Protection guidance
+    # Digital legislation & governance
+    - https://digital-strategy.ec.europa.eu/en/policies/data-act                             # EU Data Act updates & documents
+    - https://digital-strategy.ec.europa.eu/en/policies/data-governance-act                  # EU Data Governance Act
+    - https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act                 # EU Cyber Resilience Act
+    - https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package         # EU Digital Services Act
+    # Cloud security & compliance
+    - https://www.cisecurity.org/benchmark/                                                  # CIS Benchmarks
+    - https://cloudsecurityalliance.org/research/guidance/                                   # CSA Cloud Controls Matrix
+    # Post‑quantum cryptography & advanced security
+    - https://csrc.nist.gov/Projects/post-quantum-cryptography/post-quantum-cryptography-standardization  # NIST PQC standardisation project
+    - https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/  # NSA quantum cryptography guidance
+
+  deeptech:
+    # AI regulations & frameworks
     - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai                # EU AI Act page (legislative progress & timelines)
     - https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence  # European AI approach & governance
     - https://www.nist.gov/artificial-intelligence/ai-risk-management-framework               # NIST AI RMF (framework updates)
     - https://www.whitehouse.gov/ostp/ai-bill-of-rights/                                     # US AI Bill of Rights
-    # Cybersecurity advisories & standards - critical infrastructure focus
-    - https://www.cisa.gov/topics/critical-infrastructure-security                           # CISA critical infrastructure security
-    - https://www.enisa.europa.eu/publications/nis2-technical-implementation-guidance         # ENISA technical guidance on NIS2 compliance
-    - https://www.ncsc.gov.uk/section/keep-up-to-date/ncsc-news?q=&defaultTypes=guidance&sort=date%2Bdesc  # UK NCSC guidance & security advisories
-    # Data protection & EU digital legislation - major frameworks only
-    - https://www.edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en  # EDPB guidelines & recommendations
-    - https://digital-strategy.ec.europa.eu/en/policies/data-act                               # EU Data Act updates & documents
-    - https://digital-strategy.ec.europa.eu/en/policies/data-governance-act                   # EU Data Governance Act
-    # Advanced energy technologies - fusion & next-gen nuclear
-    - https://www.nrc.gov/materials/fusion.html                                               # US NRC fusion regulation & licensing
-    - https://www.federalregister.gov/documents/2023/10/04/2023-21988/regulatory-framework-for-fusion-systems  # US regulatory framework for fusion systems
-    - https://www.energy.gov/ne/advanced-reactor-demonstration-program                        # DOE Advanced Reactor Demonstration Program
-    # Post‑quantum cryptography & advanced security
-    - https://csrc.nist.gov/Projects/post-quantum-cryptography/post-quantum-cryptography-standardization  # NIST PQC standardisation project
-    - https://www.nsa.gov/Cybersecurity/Quantum-Key-Distribution-QKD-and-Quantum-Cryptography-QC/  # NSA quantum cryptography guidance
+    # Quantum technologies
+    - https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci  # EuroQCI
+    - https://quantum.gov/                                                                   # U.S. National Quantum Initiative
+    - https://www.nist.gov/quantum-information-science                                       # NIST Quantum Information Science
     # Advanced manufacturing & robotics
     - https://www.nist.gov/advanced-manufacturing                                            # NIST advanced manufacturing programs
     - https://www.energy.gov/eere/amo/advanced-manufacturing-office                          # DOE Advanced Manufacturing Office
     - https://www.darpa.mil/program/revolutionary-enhancement-of-visibility-by-exploiting-active-light-fields  # DARPA advanced sensing programs
+    - https://www.nsf.gov/eng/cmmi/am.jsp                                                    # NSF Advanced Manufacturing
+    # Semiconductor & microelectronics
+    - https://www.nist.gov/semiconductors                                                    # NIST Semiconductor Programs
+    - https://www.chips.gov/                                                                 # CHIPS for America
+    # Advanced energy technologies
+    - https://www.nrc.gov/materials/fusion.html                                               # US NRC fusion regulation & licensing
+    - https://www.federalregister.gov/documents/2023/10/04/2023-21988/regulatory-framework-for-fusion-systems  # US regulatory framework for fusion systems
+    - https://www.energy.gov/ne/advanced-reactor-demonstration-program                        # DOE Advanced Reactor Demonstration Program
+
+  crossIndustry:
+    # Cross-cutting regulations and standards
+    - https://www.whitehouse.gov/ostp/news-updates/                                          # White House OSTP News & Updates
+    - https://www.nist.gov/standardsgov/what-we-do/federal-policy-standards/regulations-and-rulemaking  # NIST standards in rulemaking
+    - https://www.wto.org/english/tratop_e/tbt_e/tbt_e.htm                                   # WTO Technical Barriers to Trade
+    - https://ec.europa.eu/growth/single-market/european-standards_en                        # European Standards
 
 # Keyword cues per section (classification uses the section with most matches)
 keywords:
@@ -100,6 +141,10 @@ keywords:
   
   pharma: ["MDR", "IVDR", "EUDAMED", "ISO 13485", "ISO 14971", "IEC 62304", "IEC 62366", "IEC 60601", "SaMD", "AI/ML medical device", "clinical evaluation", "post-market surveillance", "notified body", "MDCG guidance", "GMP", "GCP", "GLP", "GxP", "data integrity", "CSV/CSA", "pharmacovigilance", "PV", "ATMP", "gene therapy", "cell therapy", "CRISPR", "mRNA", "CMC", "decentralized clinical trials", "DCT", "RWE", "EMA", "CHMP", "FDA guidance", "QMSR", "CDRH", "HTA", "HTAR", "IMDRF", "ICH guideline", "European Pharmacopoeia", "USP-NF", "drug-device combination", "companion diagnostic", "biomarker", "orphan drug", "accelerated approval", "breakthrough therapy"]
   
-  automotive: ["type approval", "UN Regulation", "UNECE WP.29", "GTR", "Euro 7", "CO2 standards", "ZEV mandate", "EV", "battery regulation", "battery passport", "BMS", "inverter", "powertrain", "ADAS", "autonomous driving", "ADS", "ODD", "L3", "L4", "ALKS", "UN R157", "UN R79", "ISO 26262", "ISO 21448", "SOTIF", "Automotive SPICE", "ISO/SAE 21434", "cybersecurity", "software updates", "OTA", "UN R155", "UN R156", "DMS", "V2X", "C-V2X", "ITS-G5", "software-defined vehicle", "SDV", "UN R100", "UN R134", "UN R136", "thermal runaway", "hydrogen fuel cell", "HFCV", "ETSI ITS", "Euro NCAP", "FMVSS"]
+  automotive: ["type approval", "UN Regulation", "UNECE WP.29", "GTR", "Euro 7", "CO2 standards", "ZEV mandate", "EV", "battery regulation", "battery passport", "BMS", "inverter", "powertrain", "ADAS", "autonomous driving", "ADS", "ODD", "L3", "L4", "ALKS", "UN R157", "UN R79", "ISO 26262", "ISO 21448", "SOTIF", "Automotive SPICE", "ISO/SAE 21434", "cybersecurity", "software updates", "OTA", "UN R155", "UN R156", "DMS", "V2X", "C-V2X", "ITS-G5", "software-defined vehicle", "SDV", "UN R100", "UN R134", "UN R136", "thermal runaway", "hydrogen fuel cell", "HFCV", "ETSI ITS", "Euro NCAP", "FMVSS", "AUTOSAR"]
   
-  crossIndustry: ["AI Act", "AI Bill of Rights", "AI risk management", "NIST AI RMF", "AI compliance", "AI ethics", "AI governance", "critical infrastructure", "cybersecurity", "NIS2", "DORA", "Data Act", "Data Governance Act", "Cyber Resilience Act", "post-quantum cryptography", "PQC", "quantum-safe", "ML-KEM", "ML-DSA", "SLH-DSA", "FIPS 203", "FIPS 204", "FIPS 205", "quantum key distribution", "QKD", "fusion energy regulation", "advanced reactor", "small modular reactor", "SMR", "advanced manufacturing", "robotics", "DARPA", "semiconductor", "CHIPS Act", "quantum computing", "quantum sensing", "neuromorphic computing", "edge AI", "high-performance computing", "HPC", "digital twin", "synthetic biology"]
+  infotech: ["cybersecurity", "information security", "ISO/IEC 27001", "SOC 2", "NIST CSF", "NIST SP 800", "zero trust", "SASE", "secure SDLC", "SBOM", "vulnerability", "CVE", "exploit", "NIS2", "DORA", "Data Act", "Data Governance Act", "Cyber Resilience Act", "GDPR", "privacy", "data protection", "cloud security", "DevSecOps", "container security", "API security", "identity management", "IAM", "authentication", "authorization", "encryption", "TLS", "PKI", "digital signature", "threat intelligence", "incident response", "security operations", "SOC", "SIEM", "XDR", "EDR", "NDR", "penetration testing", "red team", "blue team", "purple team", "security assessment", "risk assessment", "compliance", "audit", "security control"]
+  
+  deeptech: ["artificial intelligence", "machine learning", "deep learning", "neural network", "AI Act", "AI Bill of Rights", "AI ethics", "AI governance", "AI risk management", "NIST AI RMF", "quantum computing", "quantum cryptography", "quantum sensing", "quantum communication", "quantum key distribution", "QKD", "post-quantum cryptography", "PQC", "quantum-safe", "ML-KEM", "ML-DSA", "SLH-DSA", "FIPS 203", "FIPS 204", "FIPS 205", "semiconductor", "microelectronics", "CHIPS Act", "advanced manufacturing", "additive manufacturing", "3D printing", "robotics", "automation", "computer vision", "edge computing", "edge AI", "neuromorphic computing", "high-performance computing", "HPC", "digital twin", "synthetic biology", "CRISPR", "gene editing", "fusion energy", "advanced reactor", "small modular reactor", "SMR", "battery technology", "energy storage", "photonics", "ASIC", "FPGA", "RF/microwave", "5G", "6G", "materials science", "nanotechnology"]
+  
+  crossIndustry: ["standardization", "harmonization", "technical barrier", "trade agreement", "regulatory cooperation", "international standard", "conformity assessment", "certification", "accreditation", "market surveillance", "CE marking", "regulatory sandbox", "innovation-friendly regulation", "regulatory science", "technical committee", "working group", "public consultation", "impact assessment", "regulatory impact", "technical specification", "interoperability", "cross-border", "mutual recognition", "global governance", "international cooperation", "sustainable development", "climate neutrality", "circular economy", "supply chain", "due diligence", "ESG", "corporate sustainability", "resilience", "strategic autonomy"]
