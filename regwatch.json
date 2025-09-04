@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "lastUpdated": "2025-09-04T06:48:27Z",
-=======
   "lastUpdated": "2025-09-04T07:28:30Z",
->>>>>>> Stashed changes
   "sections": {
     "space": [
       {
@@ -28,7 +24,7 @@
         "title": "DARPA, State of New Mexico establish framework to advance quantum computing",
         "url": "https://www.darpa.mil/news/2025/darpa-new-mexico-establish-framework-advance-quantum-computing",
         "source": "DARPA - Defense Advanced Research Projects Agency",
-        "summary": "DARPA signed an agreement with the State of New Mexico’s Economic Development Department to create the Quantum Frontier Project.",
+        "summary": "DARPA signed an agreement with the State of New Mexico's Economic Development Department to create the Quantum Frontier Project.",
         "published": "2025-09-02T11:44:31Z"
       }
     ]
