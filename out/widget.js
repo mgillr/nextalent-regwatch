@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2025-09-19T06:48:37Z", "sections": {"aviation": [{"title": "CS-ETSO Amendment 18", "url": "https://www.easa.europa.eu/document-library/certification-specifications/cs-etso-amendment-18", "source": "Certification Specifications (CSs) / Detailed Specifications (DSs)", "summary": "", "published": "2025-09-14T21:00:00Z"}]}};
+  const DATA = {"lastUpdated": "2025-09-22T06:50:25Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
