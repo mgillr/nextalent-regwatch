@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-09-24T06:48:34Z",
+  "lastUpdated": "2025-09-25T06:49:58Z",
   "sections": {
     "space": [
       {
@@ -8,6 +8,15 @@
         "source": "Office of Space Commerce",
         "summary": "OSC’s Head of International SSA Engagement, Mariel Borowitz, presents findings from the joint study at the 2025 AMOS Conference. Opportunities for SSA Information Sharing There are multiple independent national and regional space situational awareness systems around the world. These systems … OSC & EUSST Study Opportunities for International SSA Information Sharing Read More »",
         "published": "2025-09-22T16:46:05Z"
+      }
+    ],
+    "deeptech": [
+      {
+        "title": "Energy-aware machine learning",
+        "url": "https://www.darpa.mil/news/2025/energy-aware-machine-learning",
+        "source": "DARPA - Defense Advanced Research Projects Agency",
+        "summary": "New program aims to strike the balance between energy usage and performance.",
+        "published": "2025-09-24T17:54:22Z"
       }
     ]
   }
