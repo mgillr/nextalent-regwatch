@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2025-10-07T06:49:32Z", "sections": {"pharma": [{"title": "IMDRF 28th MC Meeting Sapporo, Japan September 2025 - Outcome Statement", "url": "https://www.imdrf.org/documents/imdrf-28th-mc-meeting-sapporo-japan-september-2025-outcome-statement", "source": "IMDRF - Documents", "summary": "IMDRF 28th MC Meeting Sapporo, Japan September 2025 - Outcome Statement", "published": "2025-09-30T12:00:00Z"}]}};
+  const DATA = {"lastUpdated": "2025-10-08T06:49:13Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
