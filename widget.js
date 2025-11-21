@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2025-11-20T06:49:56Z", "sections": {"crossIndustry": [{"title": "DART and MSAI triumph at DARPA Triage Challenge", "url": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge", "source": "DARPA - Defense Advanced Research Projects Agency", "summary": "In Challenge Event 2, teams drive mass casualty tool advancements, facilitate robot-medic teaming demonstrations.", "published": "2025-11-13T18:37:30Z"}]}};
+  const DATA = {"lastUpdated": "2025-11-21T06:52:39Z", "sections": {"crossIndustry": [{"title": "Join DARPA for an office-wide industry day in Orlando in January", "url": "https://www.darpa.mil/news/2025/discover-dso-2026", "source": "DARPA - Defense Advanced Research Projects Agency", "summary": "D3 connects innovators with the agency on Jan. 13, 2026, to discuss game-changing capabilities.", "published": "2025-11-19T21:22:50Z"}]}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
