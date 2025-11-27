@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-26T06:52:00Z",
+  "lastUpdated": "2025-11-27T06:53:08Z",
   "sections": {
     "infotech": [
       {
@@ -17,15 +17,6 @@
         "source": "RSS ETSI News & Press",
         "summary": "Published in: News Sophia Antipolis, France, 24 November 2025 ETSI is pleased to publish the Report of the interoperability event on the Future Railway Mobile Communication System (FRMCS), held from 27 to 31 October 2025. Organised by ETSI with the support of the European Union, EFTA, TCCA-Critical Communications and UIC - International union of railways, these Plugtests™ play a key role in accelerating the global adoption of future railway communications. They enable stakeholders across the value chain to test their solutions against each other, ensuring interoperability when deploying FRMCS over 5G networks and guaranteeing interworking with the legacy GSM-R system.",
         "published": "2025-11-24T13:00:00Z"
-      }
-    ],
-    "crossIndustry": [
-      {
-        "title": "Join DARPA for an office-wide industry day in Orlando in January",
-        "url": "https://www.darpa.mil/news/2025/discover-dso-2026",
-        "source": "DARPA - Defense Advanced Research Projects Agency",
-        "summary": "D3 connects innovators with the agency on Jan. 13, 2026, to discuss game-changing capabilities.",
-        "published": "2025-11-19T21:22:50Z"
       }
     ]
   }
