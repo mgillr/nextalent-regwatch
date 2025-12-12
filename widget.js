@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2025-12-11T06:55:23Z", "sections": {}};
+  const DATA = {"lastUpdated": "2025-12-12T06:54:15Z", "sections": {"crossIndustry": [{"title": "ETSI’s Response to the European Commission’s Call for Evidence on the EU Quantum Act", "url": "http://www.etsi.org/newsroom/news/2619-response-european-commission-call-evidence-quantum-act", "source": "RSS ETSI News & Press", "summary": "Published in: News Sophia Antipolis, 11 December 2025 ETSI published a response to the European Commission’s Call for Evidence on the EU Quantum Act.", "published": "2025-12-11T11:00:00Z"}]}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
