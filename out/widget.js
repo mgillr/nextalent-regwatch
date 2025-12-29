@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2025-12-26T06:53:29Z", "sections": {"pharma": [{"title": "IMDRF Strategic Plan 2026-2030", "url": "https://www.imdrf.org/documents/imdrf-strategic-plan-2026-2030", "source": "IMDRF - Documents", "summary": "The strategic plan outlines the mission, objectives and priorities of the International Medical Device Regulators Forum (IMDRF).", "published": "2025-12-19T12:00:00Z"}]}};
+  const DATA = {"lastUpdated": "2025-12-29T06:57:33Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
