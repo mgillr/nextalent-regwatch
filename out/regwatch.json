@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-08T06:56:32Z",
+  "lastUpdated": "2026-01-09T06:56:21Z",
   "sections": {
     "space": [
       {
@@ -10,13 +10,13 @@
         "published": "2026-01-07T18:36:40Z"
       }
     ],
-    "infotech": [
+    "deeptech": [
       {
-        "title": "Jordan / JFDA joins PIC/S",
-        "url": "http://www.picscheme.org/en/news/138/jordan-jfda-joins-pics",
-        "source": "Picscheme",
-        "summary": "Geneva, 1 January 2026:\nOn 1 January 2026, the Jordan Food & Drug Administration (JFDA) became the 57th PIC/S Participating Authority.\nJFDA submitted a complete membership application in January 2021, after successfully completing the pre-accession process. A paper assessment was carried out followed by an on-site assessment visit, which took place in April 2025. The Audit team recommended to the Committee to accept the PIC/S membership application of JFDA. After endorsement by the PIC/S Sub-Committee on Compliance (SCC), the PIC/S Committee then unanimously decided at its meeting in Hong Kong on 3-4 November 2025 on the participation of JFDA in PIC/S as of 1 January 2026.",
-        "published": "2026-01-01T18:08:00Z"
+        "title": "ETSI Plugtests advance SDN interoperability for wireless transport",
+        "url": "http://www.etsi.org/newsroom/news/2625-etsi-plugtests-advance-sdn-interoperability-for-wireless-transport",
+        "source": "RSS ETSI News & Press",
+        "summary": "Published in: News Sophia Antipolis, France, 8 January 2026 ETSI has published the official report from its fifth mWT SDN Plugtests™ for Wireless Transport, held 10–14 November 2025 at ETSI headquarters. The event marked a significant milestone in advancing multi‑vendor interoperability and automation for Software Defined Networking (SDN) across Wireless Backhaul and X‑Haul transport networks.",
+        "published": "2026-01-08T09:45:00Z"
       }
     ]
   }
