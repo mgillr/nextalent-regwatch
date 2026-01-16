@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-01-15T06:55:53Z", "sections": {"deeptech": [{"title": "ETSI Plugtests advance SDN interoperability for wireless transport", "url": "http://www.etsi.org/newsroom/news/2625-etsi-plugtests-advance-sdn-interoperability-for-wireless-transport", "source": "RSS ETSI News & Press", "summary": "Published in: News Sophia Antipolis, France, 8 January 2026 ETSI has published the official report from its fifth mWT SDN Plugtests™ for Wireless Transport, held 10–14 November 2025 at ETSI headquarters. The event marked a significant milestone in advancing multi‑vendor interoperability and automation for Software Defined Networking (SDN) across Wireless Backhaul and X‑Haul transport networks.", "published": "2026-01-08T09:45:00Z"}]}};
+  const DATA = {"lastUpdated": "2026-01-16T06:55:30Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
