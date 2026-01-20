@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-01-19T07:04:09Z", "sections": {}};
+  const DATA = {"lastUpdated": "2026-01-20T06:59:44Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
