@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-01-20T06:59:44Z", "sections": {}};
+  const DATA = {"lastUpdated": "2026-01-21T07:00:28Z", "sections": {"pharma": [{"title": "Class 2 Medicines Recall: Mercury Pharmaceuticals Ltd, Paliperidone Mercury Pharma prolonged-release suspension for injection in pre-filled syringes, EL(26)A/01", "url": "https://www.gov.uk/drug-device-alerts/class-2-medicines-recall-mercury-pharmaceuticals-ltd-paliperidone-mercury-pharma-prolonged-release-suspension-for-injection-in-pre-filled-syringes-el-26-a-slash-01", "source": "Alerts, recalls and safety information: medicines and medical devices", "summary": "Mercury Pharmaceuticals Ltd is recalling remaining stock of paliperidone pre-filled syringes as a precautionary measure due to Good Manufacturing Practice (GMP) deficiencies cited during a recent inspection at the finished p…", "published": "2026-01-20T13:15:13Z"}]}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
