@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-01-28T06:59:11Z", "sections": {}};
+  const DATA = {"lastUpdated": "2026-01-29T07:12:06Z", "sections": {"deeptech": [{"title": "ETSI issues new Report on Multiple Access Techniques for 6G", "url": "http://www.etsi.org/newsroom/news/2633-etsi-issues-new-report-on-multiple-access-techniques-for-6g", "source": "RSS ETSI News & Press", "summary": "Published in: News Sophia Antipolis, France, 28 January 2026 ETSI’s Industry Specification Group on Multiple Access Techniques (ISG MAT) has released ETSI GR MAT 001 , a comprehensive study comparing current multiple access techniques in downlink for the physical layer of the 3GPP radio interface with new candidate technologies being considered for 6G.", "published": "2026-01-28T09:45:00Z"}]}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
