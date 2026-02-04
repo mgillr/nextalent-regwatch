@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-02-03T07:14:44Z",
+  "lastUpdated": "2026-02-04T07:15:44Z",
   "sections": {
+    "aviation": [
+      {
+        "title": "AMC &amp; GM to Part-145 — Issue 2, Amendment 8",
+        "url": "https://www.easa.europa.eu/document-library/acceptable-means-of-compliance-and-guidance-materials/amc-gm-part-145-issue-2-7",
+        "source": "Acceptable Means of Compliance (AMC) and Guidance Material (GM)",
+        "summary": "",
+        "published": "2026-02-02T22:00:00Z"
+      }
+    ],
     "deeptech": [
       {
         "title": "ETSI issues new Report on Multiple Access Techniques for 6G",
