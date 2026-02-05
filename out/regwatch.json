@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-04T07:15:44Z",
+  "lastUpdated": "2026-02-05T07:31:20Z",
   "sections": {
     "aviation": [
       {
@@ -10,13 +10,13 @@
         "published": "2026-02-02T22:00:00Z"
       }
     ],
-    "deeptech": [
+    "space": [
       {
-        "title": "ETSI issues new Report on Multiple Access Techniques for 6G",
-        "url": "http://www.etsi.org/newsroom/news/2633-etsi-issues-new-report-on-multiple-access-techniques-for-6g",
-        "source": "RSS ETSI News & Press",
-        "summary": "Published in: News Sophia Antipolis, France, 28 January 2026 ETSI’s Industry Specification Group on Multiple Access Techniques (ISG MAT) has released ETSI GR MAT 001 , a comprehensive study comparing current multiple access techniques in downlink for the physical layer of the 3GPP radio interface with new candidate technologies being considered for 6G.",
-        "published": "2026-01-28T09:45:00Z"
+        "title": "OSC Opens TraCSS “Waitlist” for Satellite Operators",
+        "url": "https://space.commerce.gov/osc-opens-tracss-waitlist-for-satellite-operators/",
+        "source": "Office of Space Commerce",
+        "summary": "Background: NOAA’s Office of Space Commerce (OSC) is developing the Traffic Coordination System for Space (TraCSS) to provide basic space situational awareness (SSA) data and services to civil and private space operators in support of spaceflight safety. As of February … OSC Opens TraCSS “Waitlist” for Satellite Operators Read More »",
+        "published": "2026-02-04T20:25:11Z"
       }
     ]
   }
