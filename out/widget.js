@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-02-11T07:34:38Z", "sections": {"space": [{"title": "OSC Opens TraCSS “Waitlist” for Satellite Operators", "url": "https://space.commerce.gov/osc-opens-tracss-waitlist-for-satellite-operators/", "source": "Office of Space Commerce", "summary": "Background: NOAA’s Office of Space Commerce (OSC) is developing the Traffic Coordination System for Space (TraCSS) to provide basic space situational awareness (SSA) data and services to civil and private space operators in support of spaceflight safety. As of February 2026, 17 … OSC Opens TraCSS “Waitlist” for Satellite Operators Read More »", "published": "2026-02-04T17:48:01Z"}]}};
+  const DATA = {"lastUpdated": "2026-02-12T07:33:42Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
