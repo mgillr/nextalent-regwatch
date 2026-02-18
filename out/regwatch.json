@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-02-17T07:31:47Z",
+  "lastUpdated": "2026-02-18T07:33:04Z",
   "sections": {
+    "aviation": [
+      {
+        "title": "Not such a long shot",
+        "url": "https://www.darpa.mil/news/2026/long-shot-success",
+        "source": "DARPA - Defense Advanced Research Projects Agency",
+        "summary": "The X‑68A completed a series of technical milestones, moving its air-launched uninhabited vehicle closer to flight test.",
+        "published": "2026-02-16T14:39:13Z"
+      }
+    ],
     "deeptech": [
       {
         "title": "ETSI AI & DATA conference Ecosystem Collaboration, Education and “AI‑Native” Standardisation",
