@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T07:31:28Z",
+  "lastUpdated": "2026-02-20T07:29:49Z",
   "sections": {
     "aviation": [
       {
@@ -8,15 +8,6 @@
         "source": "DARPA - Defense Advanced Research Projects Agency",
         "summary": "The X‑68A completed a series of technical milestones, moving its air-launched uninhabited vehicle closer to flight test.",
         "published": "2026-02-16T14:39:13Z"
-      }
-    ],
-    "deeptech": [
-      {
-        "title": "ETSI AI & DATA conference Ecosystem Collaboration, Education and “AI‑Native” Standardisation",
-        "url": "http://www.etsi.org/newsroom/news/2644-ai-data-conference-2026-ai-native-standardisation",
-        "source": "RSS ETSI News & Press",
-        "summary": "Published in: News Sophia Antipolis, France, 12 February 2026 ETSI concluded its AI and Data Conference this week, bringing together leading researchers, industry experts, policy stakeholders and standards developers to explore the future of artificial intelligence and data technologies in Europe and beyond. The two‑day event showcased ETSI’s broad and growing role in the AI landscape, from horizontal Standardisation to specialised vertical domains.",
-        "published": "2026-02-12T08:00:00Z"
       }
     ]
   }
