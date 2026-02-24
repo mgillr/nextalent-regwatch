@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-02-23T07:36:40Z", "sections": {"aviation": [{"title": "Not such a long shot", "url": "https://www.darpa.mil/news/2026/long-shot-success", "source": "DARPA - Defense Advanced Research Projects Agency", "summary": "The X‑68A completed a series of technical milestones, moving its air-launched uninhabited vehicle closer to flight test.", "published": "2026-02-16T14:39:13Z"}]}};
+  const DATA = {"lastUpdated": "2026-02-24T07:32:38Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
