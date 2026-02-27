@@ -1,4 +1,14 @@
 {
-  "lastUpdated": "2026-02-26T07:32:52Z",
-  "sections": {}
+  "lastUpdated": "2026-02-27T07:27:25Z",
+  "sections": {
+    "deeptech": [
+      {
+        "title": "ETSI issues new Report on ISAC System and RAN Architectures",
+        "url": "http://www.etsi.org/newsroom/news/2646-gr-isc-003-6g-isac-system-ran-architectures",
+        "source": "RSS ETSI News & Press",
+        "summary": "Published in: News Sophia Antipolis, France, 26 February 2026 ETSI’s Industry Specification Group on Integrated Sensing and Communications (ISG ISAC) has released ETSI GR ISC 003 , a Report defining the architectural foundations required to integrate advanced sensing capabilities into future 6G systems. Building on earlier ISAC work, the report examines 17 key challenges across system architecture, RAN architecture, and lower-layer RAN, and proposes potential approaches to address them.",
+        "published": "2026-02-26T15:30:00Z"
+      }
+    ]
+  }
 }
