@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T07:11:03Z",
+  "lastUpdated": "2026-03-05T07:14:57Z",
   "sections": {
     "pharma": [
       {
@@ -8,24 +8,6 @@
         "source": "IMDRF - Documents",
         "summary": "Technical document: IMDRF/AE WG/N43FINAL:2020 (Edition 4) - Annexes and release notes updated annually\nCurrent Annexes and Appendix release: IMDRF/AE WG/N43FINAL:2025",
         "published": "2026-03-03T12:00:00Z"
-      }
-    ],
-    "infotech": [
-      {
-        "title": "ETSI issues new Report on Security, Privacy, Trustworthiness and Sustainability for 6G Integrated Sensing and Communications",
-        "url": "http://www.etsi.org/newsroom/news/2647-report-6g-isac-security-privacy-sustainability",
-        "source": "RSS ETSI News & Press",
-        "summary": "Published in: News Sophia Antipolis, France, 2 March 2026 The ETSI Industry Specification Group on Integrated Sensing and Communications (ISAC) has published ETSI GR ISC 004 , a comprehensive report addressing security, privacy, trustworthiness, and sustainability considerations for Integrated Sensing and Communications (ISAC) in future 6G systems.",
-        "published": "2026-03-02T08:30:00Z"
-      }
-    ],
-    "deeptech": [
-      {
-        "title": "ETSI issues new Report on ISAC System and RAN Architectures",
-        "url": "http://www.etsi.org/newsroom/news/2646-gr-isc-003-6g-isac-system-ran-architectures",
-        "source": "RSS ETSI News & Press",
-        "summary": "Published in: News Sophia Antipolis, France, 26 February 2026 ETSI’s Industry Specification Group on Integrated Sensing and Communications (ISG ISAC) has released ETSI GR ISC 003 , a Report defining the architectural foundations required to integrate advanced sensing capabilities into future 6G systems. Building on earlier ISAC work, the report examines 17 key challenges across system architecture, RAN architecture, and lower-layer RAN, and proposes potential approaches to address them.",
-        "published": "2026-02-26T15:30:00Z"
       }
     ]
   }
