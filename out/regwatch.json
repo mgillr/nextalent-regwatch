@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T07:14:57Z",
+  "lastUpdated": "2026-03-06T07:11:42Z",
   "sections": {
     "pharma": [
       {
@@ -8,6 +8,15 @@
         "source": "IMDRF - Documents",
         "summary": "Technical document: IMDRF/AE WG/N43FINAL:2020 (Edition 4) - Annexes and release notes updated annually\nCurrent Annexes and Appendix release: IMDRF/AE WG/N43FINAL:2025",
         "published": "2026-03-03T12:00:00Z"
+      }
+    ],
+    "infotech": [
+      {
+        "title": "ETSI issues new Report on Security, Privacy, Trustworthiness and Sustainability for 6G Integrated Sensing and Communications",
+        "url": "http://www.etsi.org/newsroom/news/2647-report-6g-isac-security-privacy-sustainability",
+        "source": "RSS ETSI News & Press",
+        "summary": "Published in: News Sophia Antipolis, France, 2 March 2026 The ETSI Industry Specification Group on Integrated Sensing and Communications (ISAC) has published ETSI GR ISC 004 , a comprehensive report addressing security, privacy, trustworthiness, and sustainability considerations for Integrated Sensing and Communications (ISAC) in future 6G systems.",
+        "published": "2026-03-02T08:30:00Z"
       }
     ]
   }
