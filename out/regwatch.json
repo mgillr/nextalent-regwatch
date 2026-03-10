@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-09T07:33:06Z",
+  "lastUpdated": "2026-03-10T07:12:07Z",
   "sections": {
     "pharma": [
       {
@@ -10,13 +10,13 @@
         "published": "2026-03-03T12:00:00Z"
       }
     ],
-    "infotech": [
+    "crossIndustry": [
       {
-        "title": "ETSI issues new Report on Security, Privacy, Trustworthiness and Sustainability for 6G Integrated Sensing and Communications",
-        "url": "http://www.etsi.org/newsroom/news/2647-report-6g-isac-security-privacy-sustainability",
-        "source": "RSS ETSI News & Press",
-        "summary": "Published in: News Sophia Antipolis, France, 2 March 2026 The ETSI Industry Specification Group on Integrated Sensing and Communications (ISAC) has published ETSI GR ISC 004 , a comprehensive report addressing security, privacy, trustworthiness, and sustainability considerations for Integrated Sensing and Communications (ISAC) in future 6G systems.",
-        "published": "2026-03-02T08:30:00Z"
+        "title": "DARPA’s new X-76: the speed of a jet, the freedom of a helicopter",
+        "url": "https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter",
+        "source": "DARPA - Defense Advanced Research Projects Agency",
+        "summary": "SPRINT’s experimental aircraft is now being built by Bell Textron, Inc. following a successful Critical Design Review.",
+        "published": "2026-03-03T20:06:06Z"
       }
     ]
   }
