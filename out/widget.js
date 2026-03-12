@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-03-11T07:15:35Z", "sections": {"crossIndustry": [{"title": "Quantum Benchmarking Initiative expands quest to separate hype from reality", "url": "https://www.darpa.mil/news/2026/qbi-stage-a-qbit", "source": "DARPA - Defense Advanced Research Projects Agency", "summary": "New QBI solicitation invites new entrants and approaches.", "published": "2026-03-04T21:50:21Z"}]}};
+  const DATA = {"lastUpdated": "2026-03-12T07:27:49Z", "sections": {}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
