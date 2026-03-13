@@ -1,5 +1,5 @@
 (()=>{
-  const DATA = {"lastUpdated": "2026-03-12T07:27:49Z", "sections": {}};
+  const DATA = {"lastUpdated": "2026-03-13T07:27:04Z", "sections": {"crossIndustry": [{"title": "Translate your bio-attribution research into national security impact", "url": "https://www.darpa.mil/news/2026/bio-attribution-challenge", "source": "DARPA - Defense Advanced Research Projects Agency", "summary": "Register for the DARPA Bio-Attribution Challenge to win a share of $180,000 in prizes.", "published": "2026-03-11T16:15:53Z"}]}};
   function esc(s){return (s||"").replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]||c);}
   function titleMap(k){return ({aviation:"Aviation",space:"Space",pharma:"Pharma & MedTech",automotive:"Automotive / EV / Clean energy",infotech:"InfoSec & InfoTech",deeptech:"Deep Tech & Advanced Engineering",crossIndustry:"Cross‑industry"})[k]||k;}
   function render(id) {
